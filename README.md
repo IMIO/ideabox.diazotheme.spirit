@@ -1,1 +1,1 @@
-# ideabox.dizaotheme.spirit
+# ideabox.diazotheme.spirit
