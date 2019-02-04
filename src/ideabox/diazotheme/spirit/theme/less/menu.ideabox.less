@@ -1,0 +1,46 @@
+//GENERAL
+[id="mainnavigation-wrapper"] {
+    padding: 1% 0;
+    box-sizing: border-box;
+}
+[id="portal-globalnav"] {
+    li{
+        padding: 0.25em 0 0.25em 1em;
+        list-style-type: none;
+    }
+    a{
+        color: @ideabox-menu-color;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+//DESKTOP
+@media screen and (min-width: 992px){
+    [id="portal-globalnav"] {
+        max-width: 1200px;
+        margin: 0 auto;
+        position: relative;
+        > li{
+            display: inline;
+        }
+        
+    }
+    [id="submenu-details"]{
+        background: @ideabox-menu-bg;
+        position: absolute;
+        width: 100%;
+        left: 0;
+    }
+    .submenuDynamicItems {
+        padding: 0;
+        li{
+            display: inline-block;
+            width: 25%;
+        }
+        a{
+            display: block;
+            padding: 1.4em 1.75em;
+        }
+    }
+}

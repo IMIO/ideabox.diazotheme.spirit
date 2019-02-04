@@ -1,0 +1,44 @@
+//GENERAL
+header{
+    .container{
+        background: @spirit-header-bg;
+        padding: 0;
+        width: 100% !important;
+    }
+}
+[id="content-header"]{
+    position: relative;
+}
+//LOGO
+#portal-logo{
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    margin: -1.5em 0 0 3em;
+    background: #fff;
+    text-align: center;
+    z-index: 1;
+    img{
+        max-width: 80%;
+        margin-top: 15px;
+    }
+    
+}
+//BANNER
+[id="portal-banner"] {
+    background: transparent;
+    padding: 0;
+    margin: 0 auto;
+    .container{
+        width: 100%;
+        padding: 0;
+    }
+}
+//DESKTOP
+@media screen and (min-width: 992px){
+    //BANNER
+    [id="portal-banner"] {
+        max-width: 1920px;
+    }
+}
