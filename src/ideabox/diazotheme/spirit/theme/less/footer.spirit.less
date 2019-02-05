@@ -1,0 +1,33 @@
+.footer-bloc{
+    margin: 0 0 2em 0;
+}
+[id="footer-social"]{
+    margin: 0 auto;
+    max-width: calc(32.8333333333%);
+    ul{
+        list-style: none;
+        padding: 0;
+    }
+    li{
+        display: inline-block;
+        width: 100%;
+    }
+    i.link-https::after {
+        content: "";
+    }
+}
+#portal-footer-wrapper{
+    background: @spirit-header-bg;
+    a{
+        color: @color-light;
+        font-size: 170%;
+    }
+}
+//DESKTOP
+@media screen and (min-width: 992px){
+    [id="footer-social"]{
+        li{
+            width: 19%;
+        }
+    }
+}

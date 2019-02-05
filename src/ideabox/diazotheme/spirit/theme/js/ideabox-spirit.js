@@ -12,8 +12,7 @@ $(document).ready(function() {
 
       $("#hidden-search").toggleClass("portal-search-visible portal-search-hidden");
 
-      $( "#hidden-search" ).slideToggle(
-        "fast",
+      $( "#hidden-search" ).slideToggle('fast')(
         function () {
            $("#searchGadget").focus();
         });
@@ -82,15 +81,6 @@ $(document).ready(function() {
                 image_active.removeClass('active');
                 overlaySpiritDisplay(event, gallery_overlay, image);
             }
-        });
-    });
-
-    $('.subsection-commerce-alimentation-locale #minisite-globalnav').each( function(){
-        var menu = $(this);
-        menu.addClass("hidden");
-        menu.after("<div class='menu-button'></div>");
-        $('.menu-button').click(function(){
-            menu.toggleClass('hidden');
         });
     });
 });

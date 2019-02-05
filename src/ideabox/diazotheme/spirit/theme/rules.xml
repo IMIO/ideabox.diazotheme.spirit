@@ -88,7 +88,6 @@
         </div>
     </replace>
   </rules>
-
   <!-- Content header -->
   <replace css:theme="#portal-top" css:content-children="#portal-top" />
 
@@ -100,6 +99,24 @@
   <replace css:theme="#anonymous-actions" css:content-children="#portal-personaltools-wrapper" css:if-not-content=".ajax_load" css:if-content=".userrole-anonymous" />
   
   <!-- Rules for spirit -->
+  <merge css:if-content=".mosaic-grid" attributes="class" css:theme="body" css:content="body"/>
+  <after css:content="#portal-logo">
+    <div id="search-wrapper">
+      <div id="hidden-search" class="portal-search-hidden">
+        <xsl:copy-of select="../*[@id='portal-searchbox']"/>
+      </div>
+      <div id="btn-search">
+        <a href="#"  class="btn-search"></a>
+      </div>
+    </div> 
+  </after>
+  <after css:theme-children="head">
+      <script type="text/javascript" src="/++theme++spirit/js/ideabox-spirit.js" />
+  </after>
+  <after css:if-not-content=".mosaic-grid" css:content="#portal-banner">
+    <xsl:copy-of select="../*[@id='portal-breadcrumbs']"/>
+  </after>
   <drop css:content=".dynamicSectionExploreLabel"/>
+  <drop css:content="#portal-searchbox"/>
   <drop css:content="#portal-breadcrumbs"/>
 </rules>

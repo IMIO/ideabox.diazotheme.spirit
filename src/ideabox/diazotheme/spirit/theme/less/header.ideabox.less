@@ -12,6 +12,7 @@ header{
 //LOGO
 #portal-logo{
     display: inline-block;
+    box-shadow: 1px 4px 7px #bcbcbc;
     height: 150px;
     width: 150px;
     position: absolute;
@@ -25,14 +26,46 @@ header{
     }
     
 }
+//SITE ACTION
+[id="portal-anontools"] a{
+    color: @color-light;
+}
 //BANNER
 [id="portal-banner"] {
     background: transparent;
     padding: 0;
-    margin: 0 auto;
+    margin: 0 auto 2em auto;
     .container{
         width: 100%;
         padding: 0;
+    }
+}
+//portal-breadcrumbs
+[id="portal-breadcrumbs"] {
+    margin: 1.5em auto 0.5em;
+    width: 1200px;
+    .container{
+        background: #fff;
+    }
+    ol > li + li{
+        &:before{
+            display: none;
+        }
+        &:after {
+            content: "\b800";
+            position: absolute;
+            padding: 0 5px;
+            color: @spirit-pink;
+            left: -21px;
+            top: 0;
+            padding: 0 !important;
+            font-family: fontello;
+            border: none;
+        }
+    }
+    ol a{
+        color: @color-dark;
+        text-decoration: underline;
     }
 }
 //DESKTOP
