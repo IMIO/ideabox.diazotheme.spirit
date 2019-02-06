@@ -95,7 +95,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-postcss');
 
     // CWD to theme folder
-    grunt.file.setBase('./src/ideabox/spirit/theme');
+    grunt.file.setBase('./src/ideabox/diazotheme/spirit/theme');
 
     grunt.registerTask('compile', ['less', 'postcss']);
     grunt.registerTask('default', ['compile']);
