@@ -5,6 +5,9 @@ Changelog
 1.0a1 (unreleased)
 ------------------
 
+- Add variable is_homepage on rules : WEBLIE-74
+  [mgennart]
+
 - Add style compiled
   [Aurore]
 
