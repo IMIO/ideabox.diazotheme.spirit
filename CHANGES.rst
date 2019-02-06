@@ -7,6 +7,8 @@ Changelog
 
 - Add variable is_homepage on rules : WEBLIE-74
   [mgennart]
+- Add style and JS for faceted and slider
+  [Aurore]
 
 - Add style compiled
   [Aurore]

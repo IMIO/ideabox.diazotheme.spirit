@@ -112,7 +112,10 @@
     </div> 
   </after>
   <after css:theme-children="head">
+      <script type="text/javascript" src="/++theme++spirit/js/jquery.flexslider.js" />
       <script type="text/javascript" src="/++theme++spirit/js/ideabox-spirit.js" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700|Abel|Ropa Sans" media="all" rel="stylesheet" title="Google font Abel" type="text/css" />
   </after>
   <after if-not="$is_homepage" css:content="#portal-banner">
     <xsl:copy-of select="../*[@id='portal-breadcrumbs']"/>

@@ -7,16 +7,16 @@
 $(document).ready(function() {
     var $window = $(window);
 
-// search
+    // search
     $( ".btn-search" ).click(function(event) {
 
-      $("#hidden-search").toggleClass("portal-search-visible portal-search-hidden");
+        $("#hidden-search").toggleClass("portal-search-visible portal-search-hidden");
 
-      $( "#hidden-search" ).slideToggle('fast')(
-        function () {
-           $("#searchGadget").focus();
-        });
-      event.preventDefault();
+        $( "#hidden-search" ).slideToggle('fast')(
+            function () {
+                $("#searchGadget").focus();
+            });
+        event.preventDefault();
     });
 
     function overlaySpiritDisplay(event, gallery_overlay, image){
@@ -82,5 +82,17 @@ $(document).ready(function() {
                 overlaySpiritDisplay(event, gallery_overlay, image);
             }
         });
+    });
+
+    $('.flexslider').flexslider({
+        animation: "slide",
+        animationLoop: false,
+        itemWidth: 210,
+        itemMargin: 5,
+        minItems: 2,
+        maxItems: 4,
+        start: function(slider){
+            $('body').removeClass('loading');
+        }
     });
 });

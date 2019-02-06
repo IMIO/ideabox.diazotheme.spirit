@@ -1,0 +1,105 @@
+.rows-facet(@rows, @min-range, @max-range) when(@min-range =< @max-range) {
+    .item_@{min-range}{
+        grid-row: @rows;
+        -ms-grid-row: @rows;
+    }
+    .rows-facet(@rows, @min-range + 1, @max-range);
+}
+.columns-facet(@index, @column) {
+    .item_@{index}{
+        grid-column: @column;
+        -ms-grid-column: @column;
+    }
+}
+.set-columns(@columns, @column) when(@column > @columns){
+    @column: 1;
+}
+.facet(@index, @columns, @column) when(@index < 50) {
+    .rows-facet(@index, (@index * @columns) - (@columns - 1), @index * @columns);
+    .set-columns(@columns, @column);
+    .columns-facet(@index, @column);
+    .facet(@index + 1, @columns, @column + 1);
+}
+#project_facet_view{
+    @columns: 3;
+    .facet(1, @columns, 1);
+
+    display: grid;
+    display: -ms-grid;
+    width: 100%;
+    -ms-grid-columns: 33.33% 33.33% 33.33%;
+    grid-template-columns: calc(33.33% - 1em) calc(33.33% - 1em) calc(33.33% - 1em);
+    grid-gap: 1em;
+    margin-bottom: 4em;
+
+    .project{
+        border: 1px solid #ddd;
+        display: block;
+        width: auto;
+
+        .date_project{
+            padding: 0.1em 0.5em;
+            color: gray;
+        }
+
+        .title {
+            background: @spirit-pink;
+            padding: 0.1em 0.5em;
+            color: #ffffff;
+            font-size: 1em;
+            min-height: 3em;
+        }
+
+        .image {
+            width: 100%;
+            padding-bottom: 50%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .description {
+            font-family: open sans;
+            font-size: 0.8em;
+            font-weight: normal;
+            padding: 1em 0.5em;
+            line-height: 1.2em;
+            color: #000;
+        }
+    }
+    &.news{
+        a:hover{
+            background: #f2f2f2;
+            transition: background 0.2s;
+        }
+        .project{
+            border: none;
+            .date_project {
+                color: gray;
+                transition: color 0.2s;
+            }
+            .title {
+                background: transparent;
+                color: #000;
+                font-weight: bold;
+                transition: color 0.2s;
+            }
+            .description {
+                color: gray;
+                font-size: 1em;
+                padding: 0 0.5em;
+                margin-bottom: 1em;
+            }
+            &:hover{
+                .title,
+                .date_project {
+                    color: @spirit-pink;
+                    transition: color 0.2s;
+                }
+                .description{
+                    color: #000;
+                    transition: color 0.2s;
+                }
+            }
+        }
+    }
+}
