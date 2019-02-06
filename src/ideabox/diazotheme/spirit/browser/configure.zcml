@@ -18,4 +18,13 @@
       directory="static"
       />
 
+    <browser:page
+        name="is_homepage"
+        for="*"
+        class=".diazo.DiazoView"
+        attribute="is_homepage"
+        permission="zope2.View"
+        layer="..interfaces.IIdeaboxDiazothemeSpiritLayer"
+        />
+
 </configure>
