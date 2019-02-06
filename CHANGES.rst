@@ -5,6 +5,9 @@ Changelog
 1.0a1 (unreleased)
 ------------------
 
+- Hide fullname in personal-information
+  [Aurore]
+
 - Add style for project
   [Aurore]
 
