@@ -5,6 +5,9 @@ Changelog
 1.0a1 (unreleased)
 ------------------
 
+- Add nodemodule on gitignore
+  [Aurore]
+
 - Fix path from gruntfile
   [Aurore]
 
