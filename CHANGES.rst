@@ -5,6 +5,9 @@ Changelog
 1.0a1 (unreleased)
 ------------------
 
+- Add style compiled
+  [Aurore]
+
 - Add nodemodule on gitignore
   [Aurore]
 
