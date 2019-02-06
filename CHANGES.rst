@@ -5,8 +5,12 @@ Changelog
 1.0a1 (unreleased)
 ------------------
 
+- Add style for project
+  [Aurore]
+
 - Add variable is_homepage on rules : WEBLIE-74
   [mgennart]
+
 - Add style and JS for faceted and slider
   [Aurore]
 
