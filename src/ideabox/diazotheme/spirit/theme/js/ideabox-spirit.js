@@ -84,15 +84,17 @@ $(document).ready(function() {
         });
     });
 
-    $('.flexslider').flexslider({
-        animation: "slide",
-        animationLoop: false,
-        itemWidth: 210,
-        itemMargin: 5,
-        minItems: 2,
-        maxItems: 4,
-        start: function(slider){
-            $('body').removeClass('loading');
-        }
+    $('.flexslider').each(function() {
+        $(this).flexslider({
+            animation: "slide",
+            animationLoop: false,
+            itemWidth: 210,
+            itemMargin: 5,
+            start: function(slider){
+                $('body').removeClass('loading');
+            }
+        });
+        $(this).data('flexslider').vars.minItems = $(this).attr('data-slider')
+        $(this).data('flexslider').vars.maxItems = $(this).attr('data-slider')
     });
 });
