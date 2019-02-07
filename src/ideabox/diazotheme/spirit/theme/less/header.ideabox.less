@@ -4,6 +4,7 @@ header{
         background: @spirit-header-bg;
         padding: 0;
         width: 100% !important;
+        display: flex;
     }
 }
 [id="content-header"]{
@@ -29,6 +30,30 @@ header{
 //SITE ACTION
 [id="portal-anontools"] a{
     color: @color-light;
+}
+// MENU USER
+#portal-user{
+    flex: 1;
+    text-align: right;
+    font-size: 16px;
+    padding: 1em;
+    position: relative;
+    a{
+        cursor: pointer;
+        color: #FFF;
+    }
+    #user-menu-actions{
+        display: none;
+        position: absolute;
+        background-color: #000;
+        padding: 1rem 2rem;
+        right: 0;
+        border-radius: 8px;
+        font-size: 14px;
+        text-align: left;
+        list-style: none;
+        z-index: 1;
+    }
 }
 //BANNER
 [id="portal-banner"] {

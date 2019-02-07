@@ -97,4 +97,8 @@ $(document).ready(function() {
         $(this).data('flexslider').vars.minItems = $(this).attr('data-slider')
         $(this).data('flexslider').vars.maxItems = $(this).attr('data-slider')
     });
+
+    $('#portal-user .button').click(function() {
+        $('#user-menu-actions').toggle();
+    });
 });
