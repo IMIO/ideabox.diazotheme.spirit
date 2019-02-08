@@ -5,6 +5,9 @@ Changelog
 1.0a1 (unreleased)
 ------------------
 
+- Hide menu portal-membertools-wrapper
+  [Aurore]
+
 - Hide fullname in personal-information
   [Aurore]
 
