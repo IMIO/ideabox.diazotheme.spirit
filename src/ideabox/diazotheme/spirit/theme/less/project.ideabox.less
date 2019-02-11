@@ -46,29 +46,41 @@
         }
     }
     .thumb-rating{
-        form.disabled{
-            [class^=thumbs-]{
+        padding: 0.5rem 1em;
+        margin-right: 1em;
+        background-color: #f2f2f2;
+        [class^=thumbs-]{
+            font-size: 16px;
+            position: relative;
+            margin-left: 1rem;
+            &::after{
+                font-weight: 400;
+                font-family: "Font Awesome 5 Free";
+                position: absolute;
+                left: 0;
+                top: 0;
+                padding: 0;
+                margin: 0;
+            }
+            input{
+                background-image: none;
+                z-index: 1;
                 position: relative;
-                margin-left: 30px;
-                &::before{
-                    content: "";
-                    background-color: transparent;
-                    background-image: url(++resource++cioppino.twothumbs.images/thumbs-sprite.png);
-                    background-repeat: no-repeat;
-                    border-width: 0;
-                    width: 20px;
-                    height: 30px;
-                    position: absolute;
-                    left: 0;
-                }
+                padding: 0;
             }
-            .thumbs-up::before{
-                transform: translate(-110%, -25%);
-                background-position: -44px -27px;
-            }
-            .thumbs-down::before{
-                transform: translate(-110%, -25%);
-                background-position: -18px -23px;
+        }
+        .thumbs-up::after{
+            content: "\f164";
+        }
+        .thumbs-down::after{
+            content: "\f165";
+        }
+        [class^=thumbs-].selected::after{
+            font-weight: 900;
+        }
+        form.disabled{
+            [class^=total-thumbs-]{
+                padding-left: 2rem;
             }
         }
     }
