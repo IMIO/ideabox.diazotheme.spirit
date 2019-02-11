@@ -44,6 +44,27 @@ header{
     a{
         cursor: pointer;
         color: #FFF;
+        text-transform: capitalize;
+        opacity: 0.8;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        &:hover,
+        &:active,
+        &:focus{
+            opacity: 1;
+        }
+        &.button::after{
+            padding-top: 0.3rem;
+            display: block;
+            content: "\f0d7";
+            font-weight: 900;
+            font-family: "Font Awesome 5 Free";
+            margin-left: 0.5rem;
+        }
+        &.button.up::after{
+            content: "\f0d8";
+        }
     }
     #user-menu-actions{
         display: none;
@@ -56,6 +77,9 @@ header{
         text-align: left;
         list-style: none;
         z-index: 1;
+        li{
+            margin-bottom: 0.5rem;
+        }
     }
 }
 //BANNER

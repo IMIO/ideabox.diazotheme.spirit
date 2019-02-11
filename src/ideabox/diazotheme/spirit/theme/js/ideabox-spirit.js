@@ -94,6 +94,15 @@ $(document).ready(function() {
     });
 
     $('#portal-user .button').click(function() {
+        $(this).toggleClass("up");
         $('#user-menu-actions').toggle();
+    });
+
+    $(document).mouseup(function(e){
+        var container = $("#portal-user .button");
+        if (!container.is(e.target) && container.has(e.target).length === 0){
+            container.toggleClass("up");
+            $('#user-menu-actions').toggle();
+        }
     });
 });
