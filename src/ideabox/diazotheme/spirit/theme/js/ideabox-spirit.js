@@ -1,5 +1,5 @@
 /*
- * cpskin_spirit.js
+ * ideabox_spirit.js
  * Copyright (C) 2017 AuroreMariscal <aurore@affinitic.be>
  *
  * Distributed under terms of the LICENCE.txt license.
@@ -7,16 +7,11 @@
 $(document).ready(function() {
     var $window = $(window);
 
-    // search
+// search
     $( ".btn-search" ).click(function(event) {
-
-        $("#hidden-search").toggleClass("portal-search-visible portal-search-hidden");
-
-        $( "#hidden-search" ).slideToggle('fast')(
-            function () {
-                $("#searchGadget").focus();
-            });
-        event.preventDefault();
+      $("#hidden-search").toggleClass("portal-search-visible portal-search-hidden");
+      $("#searchGadget").focus();
+      event.preventDefault();
     });
 
     function overlaySpiritDisplay(event, gallery_overlay, image){

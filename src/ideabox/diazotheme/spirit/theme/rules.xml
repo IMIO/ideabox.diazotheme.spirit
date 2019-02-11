@@ -101,7 +101,7 @@
   
   <!-- Rules for spirit -->
   <merge if="$is_homepage" attributes="class" css:theme="body" css:content="body"/>
-  <after css:content="#portal-logo">
+  <after css:content="#portal-anontools">
     <div id="search-wrapper">
       <div id="hidden-search" class="portal-search-hidden">
         <xsl:copy-of select="../*[@id='portal-searchbox']"/>
