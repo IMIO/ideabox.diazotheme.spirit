@@ -1,45 +1,74 @@
-.portaltype-project #text_with_button{
-    #button{
-        font-size: 16px;
-        padding: 0;
-        li{
-            display: inline-block;
-            padding: 0 1em;
-            margin-bottom: 1em;
-            cursor: pointer;
-            &:first-child{
-                padding-left: 0;
+.portaltype-project {
+    #text_with_button{
+        #button{
+            font-size: 16px;
+            padding: 0;
+            li{
+                display: inline-block;
+                padding: 0 1em;
+                margin-bottom: 1em;
+                cursor: pointer;
+                &:first-child{
+                    padding-left: 0;
+                }
+                color: #000;
+                position: relative;
+                &.current{
+                    color: @spirit-pink;
+                }
+                &::after {
+                    display: block;
+                    content: "";
+                    border-right: 2px solid #000;
+                    width: auto;
+                    height: 90%;
+                    position: absolute;
+                    top: 5%;
+                    left: 100%;
+                }
+                &:last-child::after{
+                    display: none;
+                }
             }
-            color: #000;
-            position: relative;
-            &.current{
-                color: @spirit-pink;
-            }
-            &::after {
-                display: block;
-                content: "";
-                border-right: 2px solid #000;
-                width: auto;
-                height: 90%;
-                position: absolute;
-                top: 5%;
-                left: 100%;
-            }
-            &:last-child::after{
+        }
+        #text{
+            margin-bottom: 4em;
+            padding: 0;
+            font-size: 16px;
+            li{
                 display: none;
+                font-size: 1em;
+                font-family: Abel;
+                &.current{
+                    display: block;
+                }
             }
         }
     }
-    #text{
-        margin-bottom: 4em;
-        padding: 0;
-        font-size: 16px;
-        li{
-            display: none;
-            font-size: 1em;
-            font-family: Abel;
-            &.current{
-                display: block;
+    .thumb-rating{
+        form.disabled{
+            [class^=thumbs-]{
+                position: relative;
+                margin-left: 30px;
+                &::before{
+                    content: "";
+                    background-color: transparent;
+                    background-image: url(++resource++cioppino.twothumbs.images/thumbs-sprite.png);
+                    background-repeat: no-repeat;
+                    border-width: 0;
+                    width: 20px;
+                    height: 30px;
+                    position: absolute;
+                    left: 0;
+                }
+            }
+            .thumbs-up::before{
+                transform: translate(-110%, -25%);
+                background-position: -44px -27px;
+            }
+            .thumbs-down::before{
+                transform: translate(-110%, -25%);
+                background-position: -18px -23px;
             }
         }
     }
