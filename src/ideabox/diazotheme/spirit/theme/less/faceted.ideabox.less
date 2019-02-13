@@ -108,3 +108,17 @@
         }
     }
 }
+@media (max-width: 992px) {
+    #project_facet_view{
+        @columns: 2;
+        .facet(1, @columns, 1);
+        grid-template-columns: calc(50% - 1em) calc(50% - 1em);
+    }
+}
+@media (max-width: 480px) {
+    #project_facet_view{
+        @columns: 1;
+        .facet(1, @columns, 1);
+        grid-template-columns: 100%;
+    }
+}

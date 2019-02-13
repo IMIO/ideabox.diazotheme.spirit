@@ -1,112 +1,115 @@
-.portaltype-project {
-    #text_with_button{
-        #button{
-            font-size: 16px;
-            padding: 0;
-            li{
-                display: inline-block;
-                padding: 0 1em;
-                margin-bottom: 1em;
-                cursor: pointer;
-                &:first-child{
-                    padding-left: 0;
-                }
-                color: #000;
-                position: relative;
-                &.current{
-                    color: @spirit-pink;
-                }
-                &::after {
-                    display: block;
-                    content: "";
-                    border-right: 2px solid #000;
-                    width: auto;
-                    height: 90%;
-                    position: absolute;
-                    top: 5%;
-                    left: 100%;
-                }
-                &:last-child::after{
-                    display: none;
-                }
+#text_with_button{
+    #button{
+        font-size: 16px;
+        padding: 0;
+        li{
+            display: inline-block;
+            padding: 0 1em;
+            margin-bottom: 1em;
+            cursor: pointer;
+            &:first-child{
+                padding-left: 0;
             }
-        }
-        #text{
-            margin-bottom: 4em;
-            padding: 0;
-            font-size: 16px;
-            li{
-                display: none;
-                font-size: 1em;
-                font-family: Abel;
-                &.current{
-                    display: block;
-                }
-            }
-        }
-    }
-    .thumb-rating{
-        background-color: #f2f2f2;
-        padding: 0.5rem 2rem;
-        [class^=thumbs-]{
-            font-size: 16px;
+            color: #000;
             position: relative;
-            &::after{
-                font-weight: 400;
-                font-family: "Font Awesome 5 Free";
+            &.current{
+                color: @spirit-pink;
+            }
+            &::after {
+                display: block;
+                content: "";
+                border-right: 2px solid #000;
+                width: auto;
+                height: 90%;
                 position: absolute;
-                left: 0;
-                top: 0;
-                padding: 0;
-                margin: 0;
+                top: 5%;
+                left: 100%;
             }
-            input{
-                background-image: none;
-                z-index: 1;
-                position: relative;
-                padding: 0;
-            }
-        }
-        .thumbs-up{
-            margin-right: 1rem;
-        }
-        .thumbs-up::after{
-            content: "\f164";
-        }
-        .thumbs-down::after{
-            content: "\f165";
-            left: 0.5rem;
-        }
-        .thumbs-up.selected{
-            color: green;
-        }
-        .thumbs-down.selected{
-            color: red;
-        }
-        form.disabled{
-            [class^=total-thumbs-]{
-                padding-left: 2rem;
+            &:last-child::after{
+                display: none;
             }
         }
     }
-    .img_project{
-        width: 100%;
-        margin-bottom: 2em;
-        padding-bottom: 40%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .twothumbs-feedback{
-        border: none;
-        background-color: transparent;
-        top: 0.2rem;
-        min-width: 300px;
-        text-align: right;
-        width: auto;
-        right: 100%;
-        .close-link{
+    #text{
+        margin-bottom: 4em;
+        padding: 0;
+        font-size: 16px;
+        li{
             display: none;
+            font-size: 1em;
+            font-family: Abel;
+            &.current{
+                display: block;
+            }
         }
+    }
+}
+.thumb-rating{
+    background-color: #f2f2f2;
+    padding: 0.5rem 2rem;
+    [class^=thumbs-]{
+        font-size: 16px;
+        position: relative;
+        &::after{
+            font-weight: 400;
+            font-family: "Font Awesome 5 Free";
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 0;
+            margin: 0;
+        }
+        input{
+            background-image: none;
+            z-index: 1;
+            position: relative;
+            padding: 0;
+            margin-left: 0;
+        }
+    }
+    .thumbs-up{
+        margin-right: 1rem;
+    }
+    .thumbs-up::after{
+        content: "\f164";
+    }
+    .thumbs-down::after{
+        content: "\f165";
+    }
+    .thumbs-up.selected{
+        color: green;
+    }
+    .thumbs-down.selected{
+        color: red;
+    }
+    form.disabled{
+        [class^=total-thumbs-]{
+            padding-left: 2rem;
+        }
+    }
+}
+.img_project{
+    width: 100%;
+    margin-bottom: 2em;
+    padding-bottom: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.twothumbs-feedback{
+    border: none;
+    background-color: transparent;
+    top: 0.2rem;
+    min-width: 300px;
+    text-align: right;
+    width: auto;
+    right: 100%;
+    .close-link{
+        display: none;
+    }
+}
+.template-facetednavigation_view{
+    .thumb-rating{
+        background-color: rgba(255, 255, 255, 0.7);
     }
 }
