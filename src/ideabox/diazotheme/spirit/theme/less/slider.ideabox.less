@@ -221,10 +221,18 @@ html[xmlns] .flexslider .slides {
             border: 1px solid #e6e6e6;
             .flex-caption{
                 padding: 4rem 2rem;
+                .flex-caption-inner{
+                    h2{
+                        line-height: 16px;
+                        margin-top: 0;
+                    }
+                    p{
+                        display: none;
+                    }
+                }
             }
-            h2{
-                line-height: 16px;
-                margin-top: 0;
+            .read-next-line{
+                display: none;
             }
             .slider_multiple_link{
                 letter-spacing: -0.05em;
@@ -261,11 +269,16 @@ html[xmlns] .flexslider .slides {
                 width: 100%;
                 display: block;
                 opacity: 0.5;
+                &:hover,
+                &:active,
+                &:focus{
+                    opacity: 1;
+                }
                 &::before {
                     font-family: "Font Awesome 5 Free";
                     font-weight: 900;
                     color: #FFF;
-                    font-size: 18px;
+                    font-size: 28px;
                     position: absolute;
                     height: 100%;
                     width: 100%;
@@ -283,6 +296,75 @@ html[xmlns] .flexslider .slides {
                     content: "\f105";
                 }
             }
+        }
+    }
+    &.one{
+        ul.slides li{
+            margin-right: 0px !important;
+            .flex-caption{
+                padding: 0;
+                .flex-caption-inner{
+                    padding: 4rem;
+                    background-color: #000000;
+                    position: absolute;
+                    z-index: 1;
+                    width: 25%;
+                    margin-top: -300px;
+                    height: 300px;
+                    width: 300px;
+                    .slider_multiple_link{
+                        color: #fff;
+                        font-size: 3rem;
+                    }
+                    p {
+                        display: block;
+                        a{
+                            font-family: Open Sans;
+                            font-size: 1.6rem;
+                            color: #ffffff;
+                            line-height: 3.2rem;
+                        }
+                    }
+                    &::after{
+                        content: "";
+                        background: linear-gradient(to bottom,transparent ,#000000,#000000);
+                        width: 100%;
+                        position: absolute;
+                        bottom: 0;
+                        height: 8.5em;
+                        left: 0;
+                    }
+                }
+            }
+            .read-next-line{
+                display: block;
+                display: block;
+                position: absolute;
+                bottom: 0;
+                margin-left: 2em;
+                padding: 1em;
+                background: #d7004e;
+                z-index: 2;
+                margin-bottom: 1px;
+                a{
+                    color: #ffffff;
+                }
+            }
+        }
+        .flex-direction-nav{
+            margin-right: 2px;
+            li{
+                margin-top: 0;
+                background-color: #d7004e !important;
+                transform: translateY(-61px);
+                margin-right: -1px;
+                a{
+                    color: #d7004e !important;
+                }
+            }
+        }
+        & + .align-right{
+            display: none;
         }
     }
 }
