@@ -45,7 +45,7 @@
     }
 }
 .thumb-rating{
-    background-color: #f2f2f2;
+    background-color: rgba(255, 255, 255, 0.7);
     padding: 0.5rem 2rem;
     [class^=thumbs-]{
         font-size: 16px;
@@ -58,6 +58,8 @@
             top: 0;
             padding: 0;
             margin: 0;
+            color: #333;
+            right: 2rem;
         }
         input{
             background-image: none;
@@ -83,8 +85,12 @@
         color: red;
     }
     form.disabled{
+        padding-left: 0.5rem;
         [class^=total-thumbs-]{
             padding-left: 2rem;
+        }
+        .thumbs-up {
+            margin-right: 1.4rem;
         }
     }
 }
