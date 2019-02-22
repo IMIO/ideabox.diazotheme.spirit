@@ -1,0 +1,179 @@
+#timeline-line2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    li{
+        position: relative;
+        flex: 1;
+        list-style: none;
+        font-size: 1.2rem;
+        .step{
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            display: flex;
+            background: red;
+            height: 40px;
+            width: 40px;
+            flex-direction: column;
+            opacity: 0.3;
+            &::after{
+                border-top: 2px solid red;
+                position: absolute;
+                content: "";
+                width: calc(100% - 40px);
+                margin-left: 100%;
+            }
+        }
+        &.current{
+            .step{
+                opacity: 1;
+                &::after{
+                    border-top: 2px dotted red;
+                }
+            }
+        }
+        &:last-child{
+            flex: 0;
+            .step{
+                &::after{
+                    border-top: none !important;
+                }
+            }
+        }
+        .texte {
+            transform: translateX(calc(-50% + 20px));
+            text-align: center;
+            margin-top: 1rem;
+        }
+    }
+}
+@max-steps-timeline: 10;
+.style-step(@index) when (@index > 0) {
+    &.steps_@{index}{
+        & {
+            margin: 4em 0;
+            text-align: center;
+        }
+        li {
+            display: inline-block !important;
+            margin: 0;
+            width: calc((100% / @index) - 1%);
+            text-align: center;
+            & .step{
+                display: block;
+                width: 2em;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 0.8em 0;
+                background: red;
+                & > div{
+                    display: none;
+                }
+                &::after {
+                    border-top: 2px solid red;
+                    display: block;
+                    position: absolute;
+                    content: "";
+                    width: calc(100% + 0.5rem);
+                    height: 100%;
+                    top: 50%;
+                }
+            }
+            &.unfinished .step{
+                opacity: 0.3;
+                &::after {
+                    border-top: 2px dotted red;
+                }
+                & > div{
+                    display: none;
+                }
+            }
+            &.current .step::after{
+                border-top: 2px dotted red;
+                opacity: 0.3;
+            }
+        }
+        #timeline-line,
+        #timeline-text{
+            margin: 0 0 1em 0 !important;
+            display: inline-block;
+            width: 100%;
+        }
+        #timeline-line li{
+            position: relative;
+        }
+        #timeline-text li{
+            vertical-align: top;
+            font-size: 80%;
+            & div{
+                padding: 0 1em;
+            }
+            &.current {
+                border-bottom: 4px solid red;
+                padding-bottom: 0.5em;
+            }
+        }
+        & li:last-child .step::after{
+            border: none !important;
+        }
+    }
+    .style-step(@index - 1);
+}
+#timeline{
+    .style-step(@max-steps-timeline);
+}
+@media (max-width: 992px) {
+    #timeline-line2{
+        width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    #timeline-line2{
+        flex-direction: column;
+        align-items: start;
+        margin-left: 50%;
+        transform: translateX(-20px);
+        width: auto;
+        li{
+            display: flex;
+            min-height: 10rem;
+            .step{
+                &::after {
+                    border-top: none;
+                    border-left: 2px solid red;
+                    width: auto;
+                    height: calc(100% - 40px);
+                    margin-left: 0;
+                    margin-top: 40px;
+                    top: 0;
+                }
+            }
+            &.current{
+                .step{
+                    &::after{
+                        border-left: 2px dotted red;
+                    }
+                }
+            }
+            &:last-child{
+                flex: 0;
+                .step{
+                    &::after{
+                        border-left: none !important;
+                    }
+                }
+            }
+            .texte{
+                transform: none;
+                margin-top: 1.2rem;
+                margin-left: 1rem;
+            }
+        }
+    }
+}
