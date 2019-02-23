@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a1 (unreleased)
+1.0a1 (2019-02-23)
 ------------------
 
 - Hide menu portal-membertools-wrapper
