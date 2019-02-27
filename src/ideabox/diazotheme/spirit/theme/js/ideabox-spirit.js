@@ -4,6 +4,7 @@
  *
  * Distributed under terms of the LICENCE.txt license.
  */
+
 $(document).ready(function() {
     var $window = $(window);
 
@@ -79,24 +80,54 @@ $(document).ready(function() {
         });
     });
 
+    var $window = $(window),
+        flexslider = { vars:{} };
+
+    function getGridSize(limit) {
+        var number = limit;
+        if (window.innerWidth < 900){
+            number = 3
+        }
+        if (window.innerWidth < 600){
+            number = 2
+        }
+        if (window.innerWidth < 480){
+            number = 1
+        }
+        return number
+    }
+
     $('.flexslider').each(function() {
+        var limit = $(this).attr('data-slider');
         $(this).flexslider({
             animation: "slide",
             animationLoop: false,
             itemWidth: 210,
             itemMargin: 5,
+            minItems: getGridSize(limit),
+            maxItems: getGridSize(limit),
             start: function(slider){
                 $('body').removeClass('loading');
             }
         });
-        $(this).data('flexslider').vars.minItems = $(this).attr('data-slider')
-        $(this).data('flexslider').vars.maxItems = $(this).attr('data-slider')
     });
 
     $('#portal-user .button').click(function() {
         $(this).toggleClass("up");
         $('#user-menu-actions').toggle();
     });
+
+    $window.resize(function() {
+        resize();
+    });
+
+    function resize() {
+        var limit = $('.flexslider').attr('data-slider');
+        var gridSize = getGridSize(limit);
+
+        $('.flexslider').data('flexslider').vars.minItems = gridSize;
+        $('.flexslider').data('flexslider').vars.maxItems = gridSize;
+    }
 
     $(document).mouseup(function(e){
         var container = $("#portal-user .button");
