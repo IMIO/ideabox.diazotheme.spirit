@@ -299,6 +299,9 @@ html[xmlns] .flexslider .slides {
         }
     }
     &.one{
+        .flex-control-nav{
+            display: none
+        }
         ul.slides li{
             margin-right: 0px !important;
             .flex-caption{
@@ -343,7 +346,7 @@ html[xmlns] .flexslider .slides {
                 bottom: 0;
                 margin-left: 2em;
                 padding: 1em;
-                background: #d7004e;
+                background: @spirit-pink;
                 z-index: 2;
                 margin-bottom: 1px;
                 a{
@@ -355,11 +358,11 @@ html[xmlns] .flexslider .slides {
             margin-right: 2px;
             li{
                 margin-top: 0;
-                background-color: #d7004e !important;
+                background-color: @spirit-pink !important;
                 transform: translateY(-61px);
                 margin-right: -1px;
                 a{
-                    color: #d7004e !important;
+                    color: @spirit-pink !important;
                 }
             }
         }

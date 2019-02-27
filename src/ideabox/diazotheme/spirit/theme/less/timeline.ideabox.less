@@ -17,13 +17,13 @@
             align-items: center;
             color: #fff;
             display: flex;
-            background: red;
+            background: @spirit-pink;
             height: 40px;
             width: 40px;
             flex-direction: column;
             opacity: 0.3;
             &::after{
-                border-top: 2px solid red;
+                border-top: 2px solid @spirit-pink;
                 position: absolute;
                 content: "";
                 width: calc(100% - 40px);
@@ -34,7 +34,7 @@
             .step{
                 opacity: 1;
                 &::after{
-                    border-top: 2px dotted red;
+                    border-top: 2px dotted @spirit-pink;
                 }
             }
         }
@@ -71,12 +71,12 @@
                 margin-left: auto;
                 margin-right: auto;
                 padding: 0.8em 0;
-                background: red;
+                background: @spirit-pink;
                 & > div{
                     display: none;
                 }
                 &::after {
-                    border-top: 2px solid red;
+                    border-top: 2px solid @spirit-pink;
                     display: block;
                     position: absolute;
                     content: "";
@@ -88,14 +88,14 @@
             &.unfinished .step{
                 opacity: 0.3;
                 &::after {
-                    border-top: 2px dotted red;
+                    border-top: 2px dotted @spirit-pink;
                 }
                 & > div{
                     display: none;
                 }
             }
             &.current .step::after{
-                border-top: 2px dotted red;
+                border-top: 2px dotted @spirit-pink;
                 opacity: 0.3;
             }
         }
@@ -115,7 +115,7 @@
                 padding: 0 1em;
             }
             &.current {
-                border-bottom: 4px solid red;
+                border-bottom: 4px solid @spirit-pink;
                 padding-bottom: 0.5em;
             }
         }
@@ -146,7 +146,7 @@
             .step{
                 &::after {
                     border-top: none;
-                    border-left: 2px solid red;
+                    border-left: 2px solid @spirit-pink;
                     width: auto;
                     height: calc(100% - 40px);
                     margin-left: 0;
@@ -157,7 +157,7 @@
             &.current{
                 .step{
                     &::after{
-                        border-left: 2px dotted red;
+                        border-left: 2px dotted @spirit-pink;
                     }
                 }
             }
