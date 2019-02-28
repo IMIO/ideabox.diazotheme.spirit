@@ -1,6 +1,6 @@
 //GENERAL
 header{
-    .container{
+    & > .container{
         background: @spirit-header-bg;
         padding: 0;
         width: 100% !important;
@@ -98,9 +98,7 @@ header{
 //portal-breadcrumbs
 [id="portal-breadcrumbs"] {
     margin: 1.5em auto 0.5em;
-    .container{
-        background: #fff;
-    }
+    background: #fff;
     ol > li + li{
         &:before{
             display: none;
