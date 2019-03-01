@@ -227,13 +227,19 @@
                     }
                 }
             }
-            // en attente d'une classe sur la balise
-            .faceted-widget:last-child form::after{
-                content: "🔎";
-                color: @color-dark;
-                margin-left: -2.5rem;
-                font-size: 1.8rem;
-                margin-top: 0.5rem;
+            .faceted-widget.section-recherche form{
+                &::after{
+                    content: "🔎";
+                    color: @color-dark;
+                    margin-left: -2.5rem;
+                    font-size: 1.8rem;
+                    margin-top: 0.5rem;
+                }
+                label{
+                    opacity: 0;
+                    width: 0 !important;
+                    height: 0 !important;
+                }
             }
         }
     }
