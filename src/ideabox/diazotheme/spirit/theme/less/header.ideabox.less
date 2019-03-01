@@ -7,9 +7,12 @@ header{
         display: flex;
     }
 }
+[id="portal-header"]{
+    position: relative;
+    width: 100%;
+}
 [id="content-header"]{
     position: relative;
-    min-height: 40rem;
 }
 //LOGO
 #portal-logo{
@@ -26,7 +29,6 @@ header{
         max-width: 80%;
         margin-top: 15px;
     }
-    
 }
 //SITE ACTION
 [id="portal-anontools"] a{
@@ -90,7 +92,6 @@ header{
     background: transparent;
     padding: 0;
     margin: 0 auto 2em auto;
-    min-height: 40rem;
     .container{
         width: 100%;
         padding: 0;
@@ -129,5 +130,12 @@ header{
     //BANNER
     [id="portal-banner"] {
         max-width: 1920px;
+    }
+}
+//MOBILE
+@media (max-width: 767px) {
+    [id="portal-breadcrumbs"] {
+        position: absolute;
+        top: calc(100% + 3rem);
     }
 }

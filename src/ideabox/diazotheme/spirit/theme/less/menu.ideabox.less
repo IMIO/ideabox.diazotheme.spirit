@@ -143,78 +143,94 @@
 }
 //MOBILE
 @media (max-width: 767px) {
-    #mainnavigation{
-        display: none;
-        .globalnavWrapper{
-            #portal-globalnav{
-                padding: 0;
-                flex-direction: column;
-                li{
-                    border-bottom: 1px dashed #f2f2f2;
-                    width: 100%;
-                    a{
-                        color: @color-dark;
-                        background-color: @color-light;
-                        margin-right: 0;
-                        &:hover,
-                        &:active,
-                        &:focus{
-                            color: @color-light;
-                            background-color: @spirit-pink;
-                            span{
+    [id="content-header"] {
+        margin-bottom: 10rem;
+    }
+    #mainnavigation-wrapper{
+        top: calc(100% - 4px);
+        padding: 0;
+        position: absolute;
+        z-index: 2;
+        #mainnavigation{
+            display: none;
+            background-color: @color-light;
+            .globalnavWrapper{
+                #portal-globalnav{
+                    padding: 0;
+                    flex-direction: column;
+                    li{
+                        border-bottom: 1px dashed #f2f2f2;
+                        width: 100%;
+                        a{
+                            color: @color-dark;
+                            background-color: @color-light;
+                            margin-right: 0;
+                            width: 100%;
+                            &:hover,
+                            &:active,
+                            &:focus{
                                 color: @color-light;
+                                background-color: @spirit-pink;
+                                span{
+                                    color: @color-light;
+                                }
                             }
-                        }
-                        &::before,
-                        &::after{
-                            display: none;
-                        }
-                        span{
-                            font-size: 1.6rem;
-                            padding: 0.5rem 1rem;
-                            &::before{
-                                content: "\b848";
-                                font-family: "fontello";
-                                margin-right: 1rem;
-                            }
+                            &::before,
                             &::after{
                                 display: none;
+                            }
+                            span{
+                                font-size: 1.6rem;
+                                padding: 0.5rem 1rem;
+                                &::before{
+                                    content: "\b848";
+                                    font-family: "fontello";
+                                    margin-right: 1rem;
+                                }
+                                &::after{
+                                    display: none;
+                                }
                             }
                         }
                     }
                 }
             }
         }
-    }
-    #display_menu_button{
-        display: block;
-        opacity: 0;
-        width: 0;
-        &:checked{
-            & + label + #mainnavigation{
-                display: block;
+        #display_menu_button{
+            display: block;
+            opacity: 0;
+            width: 0;
+            height: 0;
+            padding: 0;
+            margin: 0;
+            &:checked{
+                & + label + #mainnavigation{
+                    display: block;
+                }
             }
         }
-    }
-    #display_menu_label{
-        display: block;
-        background-color: @color-dark;
-        color: @color-light;
-        margin: 0;
-        padding: 1rem;
-        &::before{
-            content: "\f0c9";
-            font-family: "Font Awesome 5 Free";
-            font-weight: 900;
-            margin-right: 1rem;
+        #display_menu_label{
+            display: block;
+            background-color: @color-dark;
+            color: @color-light;
+            margin: 0;
+            padding: 1rem;
+            &::before{
+                content: "\f0c9";
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                margin-right: 1rem;
+            }
         }
-    }
-    #submenu-details{
-        li{
-            a{
-                width: 100%;
-                font-size: 1.4rem;
-                padding-left: 3rem;
+        #submenu-details{
+            width: 100%;
+            left: 0;
+            li{
+                a{
+                    width: 100%;
+                    font-size: 1.4rem;
+                    padding-left: 3rem;
+                }
             }
         }
     }
