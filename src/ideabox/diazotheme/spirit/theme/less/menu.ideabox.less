@@ -16,16 +16,16 @@
     flex-wrap: wrap;
     [id^="portaltab-"] {
         flex: 1;
-        padding-right: 5rem;
+        display: inline-block;
         & > a{
-            padding: 0.5rem 1rem 0.5rem 0.5rem;
+            padding: 0.5rem 1rem 0.5rem 0rem;
             color: @color-dark;
             font-family: "Abel";
             text-transform: uppercase;
             position: relative;
             display: flex;
             justify-content: space-between;
-            margin-right: 10rem;
+            width: 70%;
             &::before{
                 margin-right: 1rem;
             }
@@ -105,11 +105,12 @@
             & > a{
                 color: @color-light;
                 margin-right: 2rem;
+                width: auto;
                 &::after{
                     content: "";
                     border: 1px solid @color-light;
                     position: absolute;
-                    height: calc(100% - 1.6rem);
+                    height: 70px;
                     right: -1rem;
                 }
             }
