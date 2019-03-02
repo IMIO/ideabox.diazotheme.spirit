@@ -5,7 +5,23 @@ Changelog
 1.0a2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add responsive style for menu
+  [Aurore]
+
+- Adapt space for user menu
+  [Aurore]
+
+- Add portal-footer
+  [Aurore]
+
+- Adapt menu
+  [Aurore]
+
+- Fix menu
+  [Aurore]
+
+- Fix responsive for slider
+  [Aurore]
 
 
 1.0a1 (2019-02-23)
