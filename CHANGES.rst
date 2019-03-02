@@ -5,6 +5,9 @@ Changelog
 1.0a2 (unreleased)
 ------------------
 
+- Fix width for select2 fields on projects
+  [mpeeters]
+
 - Add responsive style for menu
   [Aurore]
 

@@ -15673,11 +15673,16 @@ html[xmlns] .flexslider .slides {
 .twothumbs-feedback .close-link {
   display: none;
 }
-.template-project #formfield-form-widgets-project_theme > div,
-.template-project #formfield-form-widgets-project_district > div {
+.template-project .field .select2-container,
   width: 100%;
 }
 .template-project .select2-results {
+  max-height: 70px;
+}
+.view-name-project_submission .field .select2-container {
+  width: 100%;
+}
+.view-name-project_submission .select2-results {
   max-height: 70px;
 }
 #formfield-form-widgets-fullname {
