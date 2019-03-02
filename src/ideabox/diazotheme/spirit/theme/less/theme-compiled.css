@@ -13057,6 +13057,9 @@ header > .container {
   [id="portal-header"] {
     width: 100%;
   }
+  [id="content-header"] {
+    min-height: 40rem;
+  }
   [id="portal-banner"] {
     max-width: 1920px;
   }
