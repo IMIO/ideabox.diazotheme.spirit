@@ -5,6 +5,9 @@ Changelog
 1.0a2 (unreleased)
 ------------------
 
+- Design the faceted news layout
+  [mpeeters]
+
 - Fix width for select2 fields on projects
   [mpeeters]
 
