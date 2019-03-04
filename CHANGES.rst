@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a2 (unreleased)
+1.0a2 (2019-03-04)
 ------------------
 
 - Design the faceted news layout
