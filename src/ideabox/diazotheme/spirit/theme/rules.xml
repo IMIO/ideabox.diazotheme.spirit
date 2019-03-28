@@ -101,16 +101,6 @@
   
   <!-- Rules for spirit -->
   <merge if="$is_homepage" attributes="class" css:theme="body" css:content="body"/>
-  <after css:content="#portal-anontools">
-    <div id="search-wrapper">
-      <div id="hidden-search" class="portal-search-hidden">
-        <xsl:copy-of select="../*[@id='portal-searchbox']"/>
-      </div>
-      <div id="btn-search">
-        <a href="#"  class="btn-search"></a>
-      </div>
-    </div> 
-  </after>
   <after css:theme-children="head">
       <script type="text/javascript" src="/++theme++spirit/js/jquery.flexslider.js" />
       <script type="text/javascript" src="/++theme++spirit/js/ideabox-spirit.js" />
@@ -121,6 +111,9 @@
     <xsl:copy-of select="../*[@id='portal-breadcrumbs']"/>
   </after>
   <drop css:content=".dynamicSectionExploreLabel"/>
-  <drop css:content="#portal-searchbox"/>
   <drop css:content="#portal-breadcrumbs"/>
+
+    <!-- Search -->
+  <replace css:theme="#searchbox-content" css:content="#portal-searchbox > *"></replace>
+  <drop css:content="#portal-searchbox"/>
 </rules>
