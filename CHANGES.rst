@@ -5,6 +5,9 @@ Changelog
 1.0a3 (unreleased)
 ------------------
 
+- Remove border to logo
+  [Aurore]
+
 - Adapt style for timeline tile
   [Aurore]
 
