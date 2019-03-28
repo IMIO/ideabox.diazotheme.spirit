@@ -7,6 +7,8 @@ Changelog
 
 - Fix RSS link
   [mpeeters]
+- Adapt style for timeline tile
+  [Aurore]
 
 
 1.0a2 (2019-03-04)
