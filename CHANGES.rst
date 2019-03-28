@@ -5,6 +5,9 @@ Changelog
 1.0a3 (unreleased)
 ------------------
 
+- Add style to link with button class
+  [Aurore]
+
 - Remove border to logo
   [Aurore]
 
