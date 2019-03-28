@@ -127,3 +127,4 @@ venv.bak/
 
 tmp/
 buildout.cfg
+package-lock.json
