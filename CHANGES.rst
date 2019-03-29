@@ -5,6 +5,9 @@ Changelog
 1.0a4 (unreleased)
 ------------------
 
+- Change icon to menu
+  [Aurore]
+
 - Adapt style for text (spacing and font)
   [Aurore]
 
