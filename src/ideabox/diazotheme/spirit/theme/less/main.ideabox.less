@@ -4,13 +4,21 @@ h1, h2, h3, h4, h5, h6 {
 h1, h2{
 	letter-spacing: -0.05em;
 }
+h1{
+	line-height: 35px;
+}
 h2{
 	color: @color-grey;
+	margin-bottom: 0px;
+	line-height: 43.2px;
 }
 #content p,
 #content li{
 	font-family: Open Sans;
 	font-size: 1.6rem;
+	color: rgb(89, 89, 89);
+	line-height: 24px;
+	margin-bottom: 16px;
 }
 #content li{
 	margin-bottom: 0.25em;
@@ -19,6 +27,8 @@ h1.documentFirstHeading{
 	border-bottom: none;
 }
 a{
+    color: @spirit-pink;
+    border-bottom: none !important;
     &:focus {
         outline: none;
         text-decoration: none;
