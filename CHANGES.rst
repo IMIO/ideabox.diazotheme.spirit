@@ -5,7 +5,8 @@ Changelog
 1.0a4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix style to link with button class
+  [Aurore]
 
 
 1.0a3 (2019-03-28)
