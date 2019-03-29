@@ -5,6 +5,9 @@ Changelog
 1.0a4 (unreleased)
 ------------------
 
+- Adapt style for text (spacing and font)
+  [Aurore]
+
 - Fix style to link with button class
   [Aurore]
 
