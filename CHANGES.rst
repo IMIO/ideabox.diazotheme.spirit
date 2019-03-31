@@ -5,6 +5,9 @@ Changelog
 1.0a4 (unreleased)
 ------------------
 
+- Adapt style line-height,...
+  [Aurore]
+
 - Change icon to menu
   [Aurore]
 
