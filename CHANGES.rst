@@ -5,7 +5,8 @@ Changelog
 1.0b2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Change link in footer
+  [Aurore]
 
 
 1.0b1 (2019-03-31)
