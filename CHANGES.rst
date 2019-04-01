@@ -5,6 +5,9 @@ Changelog
 1.0b2 (unreleased)
 ------------------
 
+- Adapt style
+  [Aurore]
+
 - Change link in footer
   [Aurore]
 
