@@ -5,6 +5,9 @@ Changelog
 1.0b3 (unreleased)
 ------------------
 
+- Adapt style for navigation portlet
+  [Aurore]
+
 - Add youtube icon to footer
   [Aurore]
 
