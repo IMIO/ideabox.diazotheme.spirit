@@ -13,6 +13,9 @@ Changelog
 - Add script in footer
   [Aurore]
 
+- Update menu pictos
+  [mpeeters]
+
 - Adapt style on date in faceted
   [Aurore]
 
