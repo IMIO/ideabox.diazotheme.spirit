@@ -5,7 +5,8 @@ Changelog
 1.0b4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Display list in project
+  [Aurore]
 
 
 1.0b3 (2019-04-02)
