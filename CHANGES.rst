@@ -5,6 +5,9 @@ Changelog
 1.0b3 (unreleased)
 ------------------
 
+- Adapt style on date in tile news
+  [Aurore]
+
 - Add padding to news faceted
   [Aurore]
 
