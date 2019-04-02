@@ -5,8 +5,7 @@ Changelog
 1.0b3 (unreleased)
 ------------------
 
-- Add icon youtube to foooter
-  [Aurore]
+- Nothing changed yet.
 
 
 1.0b2 (2019-04-01)

@@ -55,24 +55,23 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
-.ideabox-youtube-1:before { content: '\E801'; } /* '렎' */
-.ideabox-instagram-1:before { content: '\E802'; } /* '끝' */
-.ideabox-instagram:before { content: '\E803'; } /* '댞' */
-.ideabox-right-small:before { content: '\E804'; } /* '렀' */
-.ideabox-right:before { content: '\E805'; } /* '렁' */
-.ideabox-facebook-1:before { content: '\E806'; } /* '렉' */
-.ideabox-twitter-1:before { content: '\E807'; } /* '렎' */
-.ideabox-cancel-circled2:before { content: '\E808'; } /* '렐' */
-.ideabox-menu:before { content: '\E809'; } /* '렒' */
-.ideabox-mail:before { content: '\E80A'; } /* '렘' */
-.ideabox-print:before { content: '\E80B'; } /* '렚' */
-.ideabox-rss:before { content: '\E80C'; } /* '렞' */
-.ideabox-right-1:before { content: '\E80D'; } /* '렼' */
-.ideabox-down-open:before { content: '\E80E'; } /* '롄' */
-.ideabox-down-open-mini:before { content: '\E80F'; } /* '롈' */
-.ideabox-down-open-big:before { content: '\E810'; } /* '롲' */
-.ideabox-up-open-big:before { content: '\E811'; } /* '롳' */
-.ideabox-up-open-mini-1:before { content: '\E812'; } /* '롴' */
-.ideabox-down-open-mini-1:before { content: '\E813'; } /* '롷' */
-.ideabox-up-open-2:before { content: '\E814'; } /* '롸' */
-.ideabox-down-open-1:before { content: '\E815'; } /* '롻' */
+.ideabox-instagram-1:before { content: '\b05d'; } /* '끝' */
+.ideabox-instagram:before { content: '\b31e'; } /* '댞' */
+.ideabox-right-small:before { content: '\b800'; } /* '렀' */
+.ideabox-right:before { content: '\b801'; } /* '렁' */
+.ideabox-facebook-1:before { content: '\b809'; } /* '렉' */
+.ideabox-twitter-1:before { content: '\b80e'; } /* '렎' */
+.ideabox-cancel-circled2:before { content: '\b810'; } /* '렐' */
+.ideabox-menu:before { content: '\b812'; } /* '렒' */
+.ideabox-mail:before { content: '\b818'; } /* '렘' */
+.ideabox-print:before { content: '\b81a'; } /* '렚' */
+.ideabox-rss:before { content: '\b81e'; } /* '렞' */
+.ideabox-right-1:before { content: '\b83c'; } /* '렼' */
+.ideabox-down-open:before { content: '\b844'; } /* '롄' */
+.ideabox-down-open-mini:before { content: '\b848'; } /* '롈' */
+.ideabox-down-open-big:before { content: '\b872'; } /* '롲' */
+.ideabox-up-open-big:before { content: '\b873'; } /* '롳' */
+.ideabox-up-open-mini-1:before { content: '\b874'; } /* '롴' */
+.ideabox-down-open-mini-1:before { content: '\b877'; } /* '롷' */
+.ideabox-up-open-2:before { content: '\b878'; } /* '롸' */
+.ideabox-down-open-1:before { content: '\b87b'; } /* '롻' */
