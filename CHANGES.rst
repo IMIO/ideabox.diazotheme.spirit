@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0b4 (unreleased)
+1.0b4 (2019-04-02)
 ------------------
 
 - Update favicon
