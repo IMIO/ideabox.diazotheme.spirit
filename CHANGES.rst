@@ -5,6 +5,9 @@ Changelog
 1.0b3 (unreleased)
 ------------------
 
+- Fix width for district and theme fields on encoding project form
+  [mpeeters]
+
 - Update menu pictos
   [mpeeters]
 
