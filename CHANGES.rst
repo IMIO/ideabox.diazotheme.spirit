@@ -10,6 +10,8 @@ Changelog
 
 - Update menu pictos
   [mpeeters]
+- Add script in footer
+  [Aurore]
 
 - Adapt style on date in faceted
   [Aurore]

@@ -94,6 +94,9 @@
 
   <!-- Footer -->
   <replace css:theme-children="#portal-footer" css:content-children="#portal-footer" />
+  <replace css:theme-children="#portal-footer-script">
+      <xsl:copy-of css:select="#portal-footer-wrapper script" />
+  </replace>
 
   <!-- toolbar -->
   <replace css:theme="#portal-toolbar" css:content-children="#edit-bar" css:if-not-content=".ajax_load" css:if-content=".userrole-authenticated" />
