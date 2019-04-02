@@ -5,6 +5,9 @@ Changelog
 1.0b3 (unreleased)
 ------------------
 
+- Update menu pictos
+  [mpeeters]
+
 - Adapt style on date in faceted
   [Aurore]
 
