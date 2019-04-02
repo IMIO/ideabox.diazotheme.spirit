@@ -5,6 +5,9 @@ Changelog
 1.0b4 (unreleased)
 ------------------
 
+- Update favicon
+  [mpeeters]
+
 - Display list in project
   [Aurore]
 
