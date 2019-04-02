@@ -5,13 +5,14 @@ Changelog
 1.0b3 (unreleased)
 ------------------
 
+- Add script in footer
+  [Aurore]
+
 - Fix width for district and theme fields on encoding project form
   [mpeeters]
 
 - Update menu pictos
   [mpeeters]
-- Add script in footer
-  [Aurore]
 
 - Update menu pictos
   [mpeeters]
