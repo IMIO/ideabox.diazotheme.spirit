@@ -5,6 +5,9 @@ Changelog
 1.0b3 (unreleased)
 ------------------
 
+- Add icon to multi-select2-widget in project form
+  [Aurore]
+
 - Adapt style for navigation portlet
   [Aurore]
 
