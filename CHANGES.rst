@@ -5,6 +5,9 @@ Changelog
 1.0b5 (unreleased)
 ------------------
 
+- Fix error script in footer
+  [Aurore]
+
 - Fix width embed and change height on faceted title
   [Aurore]
 
