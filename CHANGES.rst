@@ -5,6 +5,9 @@ Changelog
 1.0b5 (unreleased)
 ------------------
 
+- Change size of logo on responsive
+  [Aurore]
+
 - Remove required point on input in register
   [Aurore]
 
