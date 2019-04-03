@@ -5,6 +5,9 @@ Changelog
 1.0b5 (unreleased)
 ------------------
 
+- Fix responsive for button connect
+  [Aurore]
+
 - Fix error script in footer
   [Aurore]
 
