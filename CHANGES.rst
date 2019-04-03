@@ -5,7 +5,8 @@ Changelog
 1.0b5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix width embed and change height on faceted title
+  [Aurore]
 
 
 1.0b4 (2019-04-02)
