@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0b5 (unreleased)
+1.0b5 (2019-04-03)
 ------------------
 
 - Change size of logo on responsive
