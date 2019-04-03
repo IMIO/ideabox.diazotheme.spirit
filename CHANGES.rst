@@ -5,6 +5,9 @@ Changelog
 1.0b5 (unreleased)
 ------------------
 
+- Remove required point on input in register
+  [Aurore]
+
 - Fix responsive for button connect
   [Aurore]
 
