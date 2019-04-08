@@ -140,6 +140,17 @@ header{
 }
 //MOBILE
 @media (max-width: 767px) {
+	#content-header{
+		& > .container{
+			flex-direction: column-reverse;
+			#portal-header{
+				margin: 0;
+			}
+		}
+	}
+	#portal-user{
+		padding: 0.5rem;
+	}
 	[id="portal-breadcrumbs"] {
 		position: absolute;
 		top: calc(100% + 3rem);
@@ -148,9 +159,14 @@ header{
 		height: 100px;
 		width: 100px;
 		box-shadow: none;
+		position: relative;
+		margin: 0;
 	}
 	[id="portal-anontools"] > ul > li{
 		display: flex;
 		flex-direction: column;
+		a{
+			margin-right: 2rem;
+		}
 	}
 }

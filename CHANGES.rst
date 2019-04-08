@@ -5,7 +5,8 @@ Changelog
 1.0b6 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix user mail in header
+  [Aurore]
 
 
 1.0b5 (2019-04-03)
