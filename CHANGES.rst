@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0b6 (unreleased)
+1.1.0 (2019-04-16)
 ------------------
 
 - Fix user mail in header
