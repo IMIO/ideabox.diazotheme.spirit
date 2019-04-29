@@ -5,7 +5,8 @@ Changelog
 1.1.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add text on button "read more"
+  [Aurore]
 
 
 1.1.0 (2019-04-16)
