@@ -5,6 +5,9 @@ Changelog
 1.1.1 (unreleased)
 ------------------
 
+- Fix pagination
+  [Aurore]
+
 - Add text on button "read more"
   [Aurore]
 
