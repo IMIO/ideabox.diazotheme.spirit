@@ -5,7 +5,8 @@ Changelog
 1.1.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix style for vote button
+  [Aurore]
 
 
 1.1.1 (2019-05-03)

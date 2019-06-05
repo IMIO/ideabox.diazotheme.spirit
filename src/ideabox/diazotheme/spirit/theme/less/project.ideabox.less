@@ -55,7 +55,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: rgba(242, 242, 242, 0.6);
+	background-color: rgba(242, 242, 242, 0.8);
 	padding: 0.5rem 1rem;
         &::after{
             font-weight: 400;
@@ -113,7 +113,7 @@
 }
 .twothumbs-feedback{
     border: none;
-    background-color: rgba(242, 242, 242, 0.6);
+    background-color: rgba(242, 242, 242, 0.8);
     top: 0;
     order: -1;
     text-align: center;
@@ -126,12 +126,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #d7004e !important;
     .close-link{
         display: none;
     }
     a{
 	    margin-right: 0.5rem;
+	    &:hover,
+	    &:active,
+	    &:focus{
+		    color: #d7004e;
+		    text-decoration: underline;
+	    }
     }
+}
+.portaltype-project{
+	.thumb-rating{
+		flex-direction: row-reverse !important;
+		form{
+			margin-left: 0 !important;
+		}
+		.twothumbs-feedback{
+			margin-left: auto;
+			flex: initial;
+			order: 1;
+			padding: 0 2rem;
+		}
+	}
 }
 .userrole-anonymous{
 	.thumb-rating{
