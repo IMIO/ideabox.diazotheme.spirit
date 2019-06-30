@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1.3 (unreleased)
+1.1.3 (2019-06-30)
 ------------------
 
 - Fix style for votes when voting is disabled
