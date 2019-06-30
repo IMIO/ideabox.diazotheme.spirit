@@ -18533,12 +18533,6 @@ html[xmlns] .flexslider .slides {
 .thumb-rating form.disabled {
   padding-left: 0.5rem;
 }
-.thumb-rating form.disabled [class^=total-thumbs-] {
-  padding-left: 2rem;
-}
-.thumb-rating form.disabled .thumbs-up {
-  margin-right: 1.4rem;
-}
 .img_project {
   width: 100%;
   margin-bottom: 2em;

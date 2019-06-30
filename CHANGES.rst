@@ -5,7 +5,8 @@ Changelog
 1.1.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix style for votes when voting is disabled
+  [mpeeters]
 
 
 1.1.2 (2019-06-06)
