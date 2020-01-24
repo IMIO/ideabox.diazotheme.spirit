@@ -5,7 +5,8 @@ Changelog
 1.1.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix style for responsive
+  [Aurore]
 
 
 1.1.3 (2019-06-30)
