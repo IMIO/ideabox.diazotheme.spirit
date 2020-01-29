@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1.4 (unreleased)
+1.1.4 (2020-01-29)
 ------------------
 
 - Fix style for responsive
