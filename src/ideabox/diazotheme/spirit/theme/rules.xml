@@ -56,13 +56,16 @@
           <xsl:apply-templates css:select="#content" />
         </div>
       </div>
-      <footer class="row">
+      <footer class="row" css:if-not-content=".portaltype-priority_action">
         <div class="col-xs-12 col-sm-12">
           <xsl:copy-of css:select="#viewlet-below-content" />
         </div>
       </footer>
     </div>
   </replace>
+  <rules css:if-content=".portaltype-priority_action">
+    <drop css:content="#viewlet-below-content"/>
+  </rules>
 
 
   <!-- Alert message -->

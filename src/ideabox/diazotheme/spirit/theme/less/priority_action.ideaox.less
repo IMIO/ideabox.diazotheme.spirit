@@ -1,0 +1,208 @@
+.portaltype-priority_action {
+    main footer {
+        display: none;
+    }
+
+    #action_project {
+        display   : flex;
+        margin-top: 5rem;
+
+        .ap-content {
+            flex: 1;
+
+            h1 {
+                margin-top: 0;
+            }
+
+            .theme {
+                label {
+                    display     : inline-block;
+                    margin      : 0;
+                    font-size   : 1.8rem;
+                    font-weight : bold;
+                    margin-right: 0.5rem;
+                    line-height : 2.4rem;
+                }
+
+                p {
+                    display        : inline-block;
+                    margin         : 0;
+                    line-height    : 2.4rem;
+                    text-decoration: underline;
+                    font-size      : 1.8rem;
+                    font-size      : medium;
+                    font-family    : @ideabox-font-third;
+                }
+            }
+
+            .description {
+                margin     : 5rem 0 4rem 0;
+                font-size  : 2.2rem;
+                font-weight: normal;
+                line-height: 3.4rem;
+            }
+
+            .text p {
+                font-size  : 2.2rem;
+                line-height: 3rem;
+                font-weight: lighter;
+            }
+
+            .ap-comment {
+                display       : flex;
+                flex-direction: column-reverse;
+            }
+        }
+
+        .ap-state {
+            width       : 40%;
+            padding-left: 5rem;
+
+            .state-block {
+                .state-header {
+                    background-color: @spirit-pink;
+                    color           : @color-light;
+                    padding         : 1rem 2rem;
+                    font-family     : @ideabox-font-secondary;
+                    font-size       : 2.6rem;
+                    text-align      : center;
+                }
+
+                .state-body {
+                    border    : 1px solid #707070;
+                    border-top: 0;
+
+                    .state-item {
+                        padding: 3rem;
+
+                        &:not(:last-child) {
+                            border-bottom: 1px solid #707070;
+                        }
+
+                        .state-date {
+                            font-size     : 1.8rem;
+                            font-weight   : bold;
+                            padding-bottom: 1rem;
+                        }
+
+                        .state-content {
+
+                            .img {
+                                margin-right  : 1rem;
+                                display       : inline-block;
+                                width         : 30%;
+                                padding-bottom: 30%;
+                                position      : relative;
+                                float         : left;
+
+                                img {
+                                    position  : absolute;
+                                    min-width : 100%;
+                                    min-height: 100%;
+                                    object-fit: cover;
+                                    top       : 0;
+                                    left      : 0;
+                                }
+                            }
+
+                            p {
+                                display    : inline;
+                                font-weight: lighter;
+                                font-size  : 2.2rem;
+                                flex       : 1;
+                                line-height: 2.8rem;
+                            }
+                        }
+                    }
+                }
+
+                .state-more {
+                    border          : 1px solid #707070;
+                    border-top      : 0;
+                    padding         : 2rem;
+                    background-color: #D3D3D3;
+                    text-align      : center;
+
+                    a {
+                        font-size: 16px;
+                        color    : @color-dark;
+                    }
+                }
+
+                .state-notif {
+                    border    : 1px solid #707070;
+                    border-top: 0;
+                    padding   : 3rem;
+                    text-align: center;
+                    font-size : 1.6rem;
+
+                    .state-switch {
+                        display        : flex;
+                        justify-content: center;
+                        align-items    : center;
+                    }
+
+                    label {
+                        position: relative;
+                        display : inline-block;
+                        width   : 60px;
+                        height  : 34px;
+                        margin  : 0 1rem;
+                    }
+
+                    label input {
+                        opacity: 0;
+                        width  : 0;
+                        height : 0;
+                    }
+
+                    .slider {
+                        position          : absolute;
+                        cursor            : pointer;
+                        top               : 0;
+                        left              : 0;
+                        right             : 0;
+                        bottom            : 0;
+                        background-color  : #ccc;
+                        -webkit-transition: .4s;
+                        transition        : .4s;
+                    }
+
+                    .slider:before {
+                        position          : absolute;
+                        content           : "";
+                        height            : 26px;
+                        width             : 26px;
+                        left              : 4px;
+                        bottom            : 4px;
+                        background-color  : white;
+                        -webkit-transition: .4s;
+                        transition        : .4s;
+                    }
+
+                    input:checked+.slider {
+                        background-color: @spirit-pink;
+                    }
+
+                    input:focus+.slider {
+                        box-shadow: 0 0 1px @spirit-pink;
+                    }
+
+                    input:checked+.slider:before {
+                        -webkit-transform: translateX(26px);
+                        -ms-transform    : translateX(26px);
+                        transform        : translateX(26px);
+                    }
+
+                    .slider.round {
+                        border-radius: 34px;
+                    }
+
+                    .slider.round:before {
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
