@@ -1,74 +1,111 @@
-h1, h2, h3, h4, h5, h6 {
-    font-family: Abel;
+.outer-wrapper {
+	.container {
+		width: auto;
+
+		#main-container {
+			margin: 0 8vw;
+		}
+	}
 }
-h1, h2{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: Abel;
+}
+
+h1,
+h2 {
 	letter-spacing: -0.05em;
 }
-h1{
-	font-size: 4rem;
+
+h1 {
+	font-size  : 4rem;
 	line-height: 42px;
 }
-h2{
-	color: @color-grey;
+
+h2 {
+	color        : @color-grey;
 	margin-bottom: 0px;
-	line-height: 43.2px;
+	line-height  : 43.2px;
 }
+
+.documentDescription {
+	font-size    : 2.2rem;
+	line-height  : 3.4rem;
+	margin-bottom: 2rem;
+}
+
 #content p,
-#content li{
-	font-family: Open Sans;
-	font-size: 1.6rem;
-	color: rgb(89, 89, 89);
-	line-height: 24px;
+#content li {
+	font-family  : @ideabox-font-third;
+	font-size    : 2.2rem;
+	color        : rgb(89, 89, 89);
+	line-height  : 3rem;
 	margin-bottom: 16px;
+	font-weight  : 300;
 }
-#content li{
+
+#content li {
 	margin-bottom: 0.25em;
 }
-h1.documentFirstHeading{
+
+h1.documentFirstHeading {
 	border-bottom: none;
 }
-a{
-    color: @spirit-pink;
-    border-bottom: none !important;
-    &:focus {
-        outline: none;
-        text-decoration: none;
-    }
-    &:hover{
-        text-decoration: none;
-    }
+
+a {
+	color        : @spirit-pink;
+	border-bottom: none !important;
+
+	&:focus {
+		outline        : none;
+		text-decoration: none;
+	}
+
+	&:hover {
+		text-decoration: none;
+	}
 }
-.align-right{
-    text-align: right;
-    .voir-tout{
-        &,
-        &:hover,
-        &:focus,
-        &:active{
-            display: block;
-	    display: flex;
-	    justify-content: end;
-	    flex-direction: row-reverse;
-	    align-items: center;
-	    font-size: 1.8rem;
-            &::before {
-		    margin-left: 1rem;
-		    color: #ffffff;
-		    content: "+";
-		    display: inline-block;
-		    font-size: 20px;
-		    height: 60px;
-		    width: 60px;
-		    background: @spirit-pink;
-		    display: flex;
-		    justify-content: center;
-		    align-items: center;
-            }
-        }
-    }
+
+.align-right {
+	text-align: right;
+
+	.voir-tout {
+
+		&,
+		&:hover,
+		&:focus,
+		&:active {
+			display        : block;
+			display        : flex;
+			justify-content: end;
+			flex-direction : row-reverse;
+			align-items    : center;
+			font-size      : 1.8rem;
+
+			&::before {
+				margin-left    : 1rem;
+				color          : #ffffff;
+				content        : "+";
+				display        : inline-block;
+				font-size      : 20px;
+				height         : 60px;
+				width          : 60px;
+				background     : @spirit-pink;
+				display        : flex;
+				justify-content: center;
+				align-items    : center;
+			}
+		}
+	}
 }
+
 @media (max-width: 767px) {
-	#main-container #sidebar.col-xs-6{
+	#main-container #sidebar.col-xs-6 {
 		width: 100%;
 	}
 }

@@ -117,10 +117,22 @@ header {
     }
 }
 
+body:not(.main-homepage) {
+    .portal-banner .bannerImage {
+        max-height: 50vh;
+        overflow  : hidden;
+    }
+}
+
 //portal-breadcrumbs
 [id="portal-breadcrumbs"] {
-    margin    : 1.5em auto 0.5em;
+    margin    : 0 8vw;
     background: #fff;
+    padding   : 0 3rem;
+
+    .container {
+        padding: 0;
+    }
 
     ol>li {
         line-height: normal;
@@ -134,7 +146,8 @@ header {
         }
 
         &+li {
-            padding    : 0 0 0 20px;
+            padding: 0 0 0 20px;
+
             &:before {
                 display: none;
             }
