@@ -61,14 +61,6 @@
             padding-left: 8rem;
 
             .state-block {
-                .state-header {
-                    background-color: @spirit-pink;
-                    color           : @color-light;
-                    padding         : 1rem 2rem;
-                    font-family     : @ideabox-font-secondary;
-                    font-size       : 2.6rem;
-                    text-align      : center;
-                }
 
                 .state-body {
                     border    : 1px solid #707070;
@@ -109,7 +101,7 @@
 
                             p {
                                 display    : inline;
-                                font-weight: lighter;
+                                font-weight: 300;
                                 font-size  : 2.2rem;
                                 flex       : 1;
                                 line-height: 2.8rem;
@@ -203,6 +195,79 @@
                     .slider.round:before {
                         border-radius: 50%;
                     }
+                }
+            }
+        }
+
+        .ap-button {
+            background-color: @spirit-pink;
+            color           : @color-light;
+            padding         : 1rem 2rem;
+            font-family     : @ideabox-font-secondary;
+            font-size       : 2.6rem;
+            text-align      : center;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        #content #action_project .ap-state {
+            width       : 50%;
+            padding-left: 2rem;
+        }
+    }
+
+    @media (max-width: 992px) {
+        #content #action_project {
+            flex-direction: column;
+
+            .ap-text,
+            .ap-comment,
+            .ap-status {
+                display: none;
+            }
+
+            .ap-text.current {
+                display: block;
+            }
+
+            .ap-comment.current {
+                display: flex;
+            }
+
+            .ap-status.current {
+                display: block;
+            }
+
+            .ap-state {
+                width       : 100%;
+                padding-left: 0;
+            }
+
+            #commenting {
+                margin-top : 0;
+                border-top : 0;
+                padding-top: 1rem;
+            }
+
+            .ap-button {
+                margin-bottom: 0.5rem;
+                position     : relative;
+                padding-right: 5rem;
+                cursor       : pointer;
+
+                &::after {
+                    content    : "\f078";
+                    position   : absolute;
+                    right      : 2rem;
+                    top        : 50%;
+                    transform  : translateY(-50%) rotate(0deg);
+                    transition : transform 0.5s;
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 900;
+                }
+
+                &.current::after {
+                    transform: translateY(-50%) rotate(180deg);
                 }
             }
         }
