@@ -5,7 +5,20 @@ Changelog
 1.1.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Hide button to project and action view
+  [Aurore]
+
+- Add responsive to project and action view
+  [Aurore]
+
+- Adapt style of header
+  [Aurore]
+
+- Fix margin of comment
+  [Aurore]
+
+- Adapt style for action view
+  [Aurore]
 
 
 1.1.4 (2020-01-29)
