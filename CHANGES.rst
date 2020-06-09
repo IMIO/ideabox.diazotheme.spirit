@@ -2,8 +2,8 @@ Changelog
 =========
 
 
-1.1.5 (unreleased)
-------------------
+1.2.0a1 (2020-06-09)
+--------------------
 
 - Hide button to project and action view
   [Aurore]
