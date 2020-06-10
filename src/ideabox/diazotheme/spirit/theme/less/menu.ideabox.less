@@ -39,7 +39,7 @@
     width    : 100%;
     transform: translateY(-50%);
     display  : inline-block;
-    z-index  : 100;
+    z-index  : 2;
     right    : 0;
 
     #portal-globalnav-wrapper {
@@ -269,6 +269,22 @@
                     font-size   : 1.4rem;
                     padding-left: 3rem;
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    [id="mainnavigation-wrapper"] {
+
+        #portal-globalnav-wrapper .container #portal-globalnav-collapse #portal-globalnav>li>a {
+            flex-direction: column;
+            align-items   : center;
+            text-align    : center;
+
+            &::before {
+                margin-right : 0;
+                margin-bottom: 1rem;
             }
         }
     }
