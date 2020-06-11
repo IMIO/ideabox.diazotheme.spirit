@@ -5,7 +5,8 @@ Changelog
 1.2.0a2 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Adapt style for homepage and action view
+  [Aurore]
 
 
 1.2.0a1 (2020-06-09)
