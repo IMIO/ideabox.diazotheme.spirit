@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.2.0a3 (unreleased)
+1.2.0a3 (2020-06-12)
 --------------------
 
 - Remove rules that moved `viewlet-below-content`
