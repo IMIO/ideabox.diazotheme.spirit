@@ -5,7 +5,8 @@ Changelog
 1.2.0a3 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Remove rules that moved `viewlet-below-content`
+  [mpeeters]
 
 
 1.2.0a2 (2020-06-11)
