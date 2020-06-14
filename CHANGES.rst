@@ -5,7 +5,8 @@ Changelog
 1.2.0a4 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Fix style
+  [Aurore]
 
 
 1.2.0a3 (2020-06-12)
