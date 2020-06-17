@@ -190,6 +190,23 @@
     display: none;
 }
 
+
+@media (max-width: 992px) {
+    [id="mainnavigation-wrapper"] {
+
+        #portal-globalnav-wrapper .container #portal-globalnav-collapse #portal-globalnav>li>a {
+            flex-direction: column;
+            align-items   : center;
+            text-align    : center;
+
+            &::before {
+                margin-right : 0;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
 //MOBILE
 @media (max-width: 767px) {
     [id="content-header"] {
@@ -197,59 +214,73 @@
     }
 
     #mainnavigation-wrapper {
-        top     : calc(100% - 4px);
-        padding : 0;
-        position: absolute;
-        z-index : 2;
+        top      : 100%;
+        padding  : 0;
+        position : absolute;
+        z-index  : 2;
+        transform: none;
 
         #mainnavigation {
             display         : none;
             background-color: @color-light;
 
-            .globalnavWrapper {
-                #portal-globalnav {
-                    padding       : 0;
-                    flex-direction: column;
+            .plone-navbar-header {
+                display: none;
+            }
 
-                    li {
-                        border-bottom: 1px dashed #f2f2f2;
-                        width        : 100%;
+            #portal-globalnav-collapse #portal-globalnav {
+                padding       : 0;
+                margin        : 0 !;
+                flex-direction: column;
 
-                        a {
-                            color           : @color-dark;
-                            background-color: @color-light;
-                            margin-right    : 0;
-                            width           : 100%;
+                li {
+                    border-bottom: 1px solid #f2f2f2;
+                    width        : 100%;
+                    padding      : 0;
 
-                            &:hover,
-                            &:active,
-                            &:focus {
-                                color           : @color-light;
-                                background-color: @spirit-pink;
+                    a {
+                        color           : @color-dark;
+                        background-color: @color-light;
+                        margin-right    : 0;
+                        width           : 100%;
+                        flex-direction  : row;
+                        justify-content : start;
+                        align-items     : start;
+                        text-align      : left;
 
-                                span {
-                                    color: @color-light;
-                                }
-                            }
-
-                            &::before,
-                            &::after {
-                                display: none;
-                            }
+                        &:hover,
+                        &:active,
+                        &:focus {
+                            color           : @color-light;
+                            background-color: @spirit-pink;
 
                             span {
-                                font-size: 1.6rem;
-                                padding  : 0.5rem 1rem;
+                                color: @color-light;
+                            }
+                        }
 
-                                &::before {
-                                    content     : "\b848";
-                                    font-family : "fontello";
-                                    margin-right: 1rem;
-                                }
+                        &::before,
+                        &::after {
+                            width        : 5rem;
+                            height       : 5rem;
+                            min-width    : 5rem;
+                            min-height   : 5rem;
+                            margin-right : 1rem;
+                            margin-bottom: 0;
+                        }
 
-                                &::after {
-                                    display: none;
-                                }
+                        span {
+                            font-size: 1.6rem;
+                            padding  : 0.5rem 1rem;
+
+                            &::before {
+                                content     : "\b848";
+                                font-family : "fontello";
+                                margin-right: 1rem;
+                            }
+
+                            &::after {
+                                display: none;
                             }
                         }
                     }
@@ -258,16 +289,17 @@
         }
 
         #display_menu_button {
-            display: block;
-            opacity: 0;
-            width  : 0;
-            height : 0;
-            padding: 0;
-            margin : 0;
+            display: none;
 
             &:checked {
                 &+label+#mainnavigation {
                     display: block;
+
+                    #portal-globalnav-collapse {
+                        display: block;
+                        margin : 0;
+                        width  : 100%;
+                    }
                 }
             }
         }
@@ -297,22 +329,6 @@
                     font-size   : 1.4rem;
                     padding-left: 3rem;
                 }
-            }
-        }
-    }
-}
-
-@media (max-width: 992px) {
-    [id="mainnavigation-wrapper"] {
-
-        #portal-globalnav-wrapper .container #portal-globalnav-collapse #portal-globalnav>li>a {
-            flex-direction: column;
-            align-items   : center;
-            text-align    : center;
-
-            &::before {
-                margin-right : 0;
-                margin-bottom: 1rem;
             }
         }
     }

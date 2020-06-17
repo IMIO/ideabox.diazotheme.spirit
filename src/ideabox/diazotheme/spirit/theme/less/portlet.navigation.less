@@ -1,40 +1,47 @@
-.portletNavigationTree{
-        border-radius: 0;
-	border: none;
-	box-shadow: none;
-	nav.portletContent{
-		ul.navTreeLevel0{
+.portletNavigationTree {
+	border-radius: 0;
+	border       : none;
+	box-shadow   : none;
+
+	nav.portletContent {
+		ul.navTreeLevel0 {
 			li {
 				margin-top: 0.2rem;
-				a{
+
+				a {
 					background-color: @ideabox-menu-bg;
-					font-size: 1.6rem;
-					font-family: Open Sans;
-					padding: 1.6rem;
-					color: #000;
-					border-top: none;
+					font-size       : 1.6rem;
+					font-family     : Open Sans;
+					padding         : 1.6rem;
+					color           : #000;
+					border-top      : none;
+
 					img,
 					&::before,
-					&::after{
+					&::after {
 						display: none;
 					}
+
 					&:focus,
 					&:active,
-					&:hover{
+					&:hover {
 						color: @spirit-pink;
 					}
 				}
 			}
+
 			li.navTreeTopNode div,
-			& > li:first-child {
+			&>li:first-child {
 				margin-top: 0;
-				& > a {
+
+				&>a {
 					background-color: @spirit-pink;
-					color: @color-light !important;
-					text-transform: uppercase;
+					color           : @color-light  !important;
+					text-transform  : uppercase;
+
 					&:focus,
 					&:active,
-					&:hover{
+					&:hover {
 						color: @color-dark;
 					}
 				}
@@ -42,10 +49,19 @@
 		}
 	}
 }
+
 @media (max-width: 767px) {
-	#sidebar .portletNavigationTree{
-		a{
+	#sidebar .portletNavigationTree {
+		a {
 			padding: 1rem;
 		}
 	}
+}
+
+.portlet .portletHeader>a {
+	color: @spirit-pink;
+}
+
+.portlet .portletContent>ul>li a {
+	color: @spirit-pink;
 }

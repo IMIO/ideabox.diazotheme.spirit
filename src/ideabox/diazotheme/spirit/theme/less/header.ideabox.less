@@ -179,7 +179,7 @@ body:not(.main-homepage) {
     }
 
     [id="content-header"] {
-        min-height: 40rem;
+        min-height: 50rem;
     }
 
     //BANNER
@@ -195,26 +195,36 @@ body:not(.main-homepage) {
             flex-direction: column-reverse;
 
             #portal-header {
-                margin: 0;
+                margin  : 0;
+                position: absolute;
+                top     : 0;
+                left    : 0;
             }
         }
     }
 
     #portal-user {
-        padding: 0.5rem;
+        padding: 0.5rem 0.5rem 0.5rem 12rem;
+    }
+
+    #search-wrapper {
+        top: 120px;
     }
 
     [id="portal-breadcrumbs"] {
         position: absolute;
-        top     : calc(100% + 3rem);
+        top     : calc(100% + 4rem);
+        margin  : 0;
+        padding : 1rem;
     }
 
     #portal-logo {
-        height    : 100px;
-        width     : 100px;
-        box-shadow: none;
-        position  : relative;
-        margin    : 0;
+        height      : 100px;
+        width       : 100px;
+        box-shadow  : none;
+        position    : relative;
+        margin      : 0;
+        margin-left: 1rem;
     }
 
     [id="portal-anontools"]>ul>li {

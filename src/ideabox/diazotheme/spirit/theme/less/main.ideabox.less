@@ -31,7 +31,7 @@ h1 {
 	font-size     : 40px;
 	font-style    : normal;
 	font-weight   : bold;
-	line-height   : 150%;
+	line-height   : 120%;
 	letter-spacing: normal;
 	margin-top    : 5rem !important;
 }
@@ -148,8 +148,26 @@ a {
 	}
 }
 
+#login-form {
+	.formControls {
+		padding-left: 0;
+	}
+
+	#buttons-login {
+		background-color: @spirit-pink;
+		border          : none;
+	}
+}
+
 @media (max-width: 767px) {
-	#main-container #sidebar.col-xs-6 {
-		width: 100%;
+	.outer-wrapper .container #main-container {
+		margin: 0;
+
+		#sidebar.col-xs-6,
+		.col-xs-12 {
+			padding: 0;
+			width  : auto;
+			margin : 0.5rem;
+		}
 	}
 }

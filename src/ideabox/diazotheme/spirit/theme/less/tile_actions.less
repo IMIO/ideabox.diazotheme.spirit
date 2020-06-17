@@ -152,3 +152,36 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    #priority_actions_view.priority_actions {
+        display       : flex;
+        flex-direction: column;
+
+        &>div a {
+            display       : flex;
+            flex-direction: column;
+
+            .image {
+                margin-bottom: 0;
+            }
+
+            .text {
+                transform : none;
+                transition: none;
+
+                .title {
+                    padding: 2rem;
+
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+}

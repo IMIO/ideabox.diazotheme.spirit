@@ -80,13 +80,14 @@
 }
 
 @media (max-width: 767px) {
-	.timeline-line {
+	#content .timeline-line {
 		flex-direction: column;
 
 		.timeline-step {
 			grid-template-columns: 1fr auto 1fr;
 			grid-template-areas  : "title block date";
 			grid-template-rows   : auto;
+			margin-bottom        : 0;
 		}
 
 		.timeline-step-content {
