@@ -38,14 +38,14 @@
 
 		.date_project{
 			padding: 0.1em 0.5em;
-			color: gray;
+			color: @color-grey;
 		}
 
 		.title {
 			background: @spirit-pink;
 			padding: 0.5em;
-			color: #ffffff;
-			font-size: 1em;
+			color: @color-light;
+			font-size: 18px;
 			min-height: 5.3em;
 		}
 
@@ -62,11 +62,9 @@
 			background-size: contain;
 		}
 		.description {
-			font-family: Abel;
-			font-size: 1.2em;
+			font-size: 16px;
 			font-weight: normal;
 			padding: 1em 0.5em;
-			line-height: 1.2em;
 			color: #000;
 		}
 	}
@@ -78,7 +76,7 @@
 		.project{
 			border: none;
 			.date_project {
-				color: gray;
+				color: @color-grey;
 				transition: color 0.2s;
 			}
 			.title {
@@ -88,7 +86,7 @@
 				transition: color 0.2s;
 			}
 			.description {
-				color: gray;
+				color: @color-grey;
 				font-size: 1em;
 				padding: 0 0.5em;
 				margin-bottom: 1em;
@@ -271,7 +269,6 @@
 			.documentByLine{
 				padding: 0 1.2em;
 				color: @spirit-pink;
-				font-family: Abel;
 				abbr{
 					border-bottom: none;
 					text-decoration: none;

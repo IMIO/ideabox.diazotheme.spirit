@@ -8,29 +8,74 @@
 	}
 }
 
+body {
+	font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size  : 12px;
+	font-weight: normal;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-	font-family: Abel;
-}
-
-h1,
-h2 {
-	letter-spacing: -0.05em;
+	display: block;
+	margin : 0;
+	padding: 0;
 }
 
 h1 {
-	font-size  : 4rem;
-	line-height: 42px;
+	color         : @color-dark;
+	font-family   : 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size     : 40px;
+	font-style    : normal;
+	font-weight   : bold;
+	line-height   : 150%;
+	letter-spacing: normal;
+	margin-top    : 5rem !important;
 }
 
 h2 {
-	color        : @color-grey;
-	margin-bottom: 0px;
-	line-height  : 43.2px;
+	color         : @spirit-pink;
+	font-family   : 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size     : 32px;
+	font-style    : normal;
+	font-weight   : normal;
+	line-height   : 125%;
+	letter-spacing: normal;
+	margin-top    : 5rem !important;
+	margin-bottom : 1rem;
+}
+
+h3 {
+	color         : @spirit-pink;
+	font-family   : 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size     : 21px;
+	font-style    : normal;
+	font-weight   : normal;
+	line-height   : 1.2em;
+	padding-top   : 0.8em;
+	padding-bottom: 0.5em;
+	letter-spacing: normal;
+}
+
+h4 {
+	color         : @color-dark;
+	font-family   : 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size     : 15px;
+	font-style    : normal;
+	font-weight   : bold;
+	line-height   : 125%;
+	letter-spacing: normal;
+	padding-top   : 2em;
+	padding-bottom: 0.5em;
+}
+
+p {
+	font-family: 'Roboto', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size  : 14px;
+	font-weight: normal;
 }
 
 .documentDescription {
@@ -41,9 +86,8 @@ h2 {
 
 #content p,
 #content li {
-	font-family  : @ideabox-font-third;
 	font-size    : 2.2rem;
-	color        : rgb(89, 89, 89);
+	color        : @color-dark;
 	line-height  : 3rem;
 	margin-bottom: 16px;
 	font-weight  : 300;
@@ -89,7 +133,7 @@ a {
 
 			&::before {
 				margin-left    : 1rem;
-				color          : #ffffff;
+				color          : @color-light;
 				content        : "+";
 				display        : inline-block;
 				font-size      : 20px;

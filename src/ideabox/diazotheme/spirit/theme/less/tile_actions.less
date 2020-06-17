@@ -6,7 +6,8 @@
     margin-bottom        : 1rem;
 
     &>div {
-        border: 1px solid #ddd;
+        border  : 1px solid #ddd;
+        overflow: hidden;
 
         &:nth-child(1) {
             grid-column: 1 / span 2;
@@ -38,7 +39,8 @@
             grid-row   : 3;
         }
 
-        a {
+        &:first-child {
+
             .image {
                 width              : 100%;
                 padding-bottom     : 60%;
@@ -48,14 +50,103 @@
             }
 
             .text {
-                padding    : 2rem;
                 font-family: @ideabox-font-primary;
-                font-size  : 2.5rem;
+                font-size  : 1.8rem;
                 color      : @color-dark;
-                line-height: 2.8rem;
+
+                .title {
+                    background-color: @color-light;
+                    padding         : 2rem 2rem 5rem 2rem;
+                    height          : 100%;
+                }
 
                 .description {
                     display: none;
+                }
+            }
+
+        }
+
+        &:not(:first-child) {
+
+            a {
+                margin-top           : 0 !important;
+                position             : relative;
+                display              : grid;
+                grid-template-columns: 1fr;
+                grid-template-rows   : 1fr;
+                height               : 100%;
+
+                .image {
+                    width              : 100%;
+                    padding-bottom     : 60%;
+                    background-repeat  : no-repeat;
+                    background-position: center;
+                    background-size    : cover;
+                    grid-row           : 1;
+                    grid-column        : 1;
+                    margin-bottom      : 9rem;
+                }
+
+                .text {
+                    font-family: @ideabox-font-primary;
+                    font-size  : 1.8rem;
+                    color      : @color-dark;
+                    grid-row   : 1;
+                    grid-column: 1;
+                    transform  : translateY(calc(100% - 9rem));
+                    transition : all 0.5s;
+
+                    .title {
+                        background-color: @color-light;
+                        padding         : 2rem 2rem 5rem 2rem;
+                        height          : 100%;
+
+                        &::before {
+                            content         : "+";
+                            background-color: @spirit-pink;
+                            color           : @color-light;
+                            font-size       : 2rem;
+                            font-weight     : bold;
+                            position        : absolute;
+                            bottom          : 1rem;
+                            right           : 1rem;
+                            display         : flex;
+                            justify-content : center;
+                            align-items     : center;
+                            height          : 5rem;
+                            width           : 5rem;
+                        }
+                    }
+
+                    .description {
+                        display: none;
+                    }
+                }
+
+                &::before {
+                    content         : " ";
+                    display         : block;
+                    position        : absolute;
+                    height          : 9rem;
+                    bottom          : 0;
+                    left            : 0;
+                    background-image: linear-gradient(transparent 30%, white 80%);
+                    width           : 100%;
+                    z-index         : 1;
+                    transition      : background-image 1s;
+                }
+
+                &:hover,
+                &:active,
+                &:focus {
+                    .text {
+                        transform: translateY(0%);
+                    }
+
+                    &::before {
+                        background-image: linear-gradient(transparent 30%, transparent 80%);
+                    }
                 }
             }
         }
