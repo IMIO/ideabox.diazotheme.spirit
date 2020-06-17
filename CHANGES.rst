@@ -5,6 +5,9 @@ Changelog
 1.2.0a5 (unreleased)
 --------------------
 
+- Adapt image for project view
+  [Aurore]
+
 - Adapt menu and homepage style
   [Aurore]
 
