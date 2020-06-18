@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.2.0a5 (unreleased)
+1.2.0a5 (2020-06-18)
 --------------------
 
 - Adapt style for responsive
