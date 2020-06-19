@@ -5,7 +5,8 @@ Changelog
 1.2.0a6 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Fix slider on homepage for responsive
+  [Aurore]
 
 
 1.2.0a5 (2020-06-18)
