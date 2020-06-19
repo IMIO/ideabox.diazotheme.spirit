@@ -121,6 +121,10 @@ body:not(.main-homepage) {
     .portal-banner .bannerImage {
         max-height: 50vh;
         overflow  : hidden;
+
+        img {
+            max-width: none !important;
+        }
     }
 }
 
@@ -129,6 +133,7 @@ body:not(.main-homepage) {
     margin    : 0 8vw;
     background: #fff;
     padding   : 0 3rem;
+    font-size : 1.2rem;
 
     .container {
         padding: 0;
@@ -212,18 +217,15 @@ body:not(.main-homepage) {
     }
 
     [id="portal-breadcrumbs"] {
-        position: absolute;
-        top     : calc(100% + 4rem);
-        margin  : 0;
-        padding : 1rem;
+        display: none;
     }
 
     #portal-logo {
-        height      : 100px;
-        width       : 100px;
-        box-shadow  : none;
-        position    : relative;
-        margin      : 0;
+        height     : 100px;
+        width      : 100px;
+        box-shadow : none;
+        position   : relative;
+        margin     : 0;
         margin-left: 1rem;
     }
 
@@ -234,5 +236,9 @@ body:not(.main-homepage) {
         a {
             margin-right: 2rem;
         }
+    }
+
+    body:not(.main-homepage) .portal-banner .bannerImage img {
+        max-height: 30vh;
     }
 }

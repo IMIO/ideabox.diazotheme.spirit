@@ -5,6 +5,9 @@ Changelog
 1.2.0a6 (unreleased)
 --------------------
 
+- Adapt style for actions
+  [Aurore]
+
 - Fix slider on homepage for responsive
   [Aurore]
 

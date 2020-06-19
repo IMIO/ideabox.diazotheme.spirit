@@ -292,3 +292,29 @@
         }
     }
 }
+
+#state_progress {
+    .state-img {
+        max-width: 25%;
+        float    : left;
+        margin   : 0.8rem 1rem 0 0;
+    }
+
+    .state-content {
+        margin-top   : 2rem;
+        clear        : both;
+
+        p {
+            line-height: 2.8rem;
+        }
+
+        &::after {
+            content      : " ";
+            clear        : both;
+            display      : block;
+            border-bottom: 1px solid @color-grey;
+            width        : 100%;
+            padding-top  : 1rem;
+        }
+    }
+}
