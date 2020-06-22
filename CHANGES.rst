@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.2.0a6 (unreleased)
+1.2.0a6 (2020-06-22)
 --------------------
 
 - Adapt style for actions
