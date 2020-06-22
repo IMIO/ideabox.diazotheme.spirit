@@ -210,6 +210,24 @@ body:not(.main-homepage) {
 
     #portal-user {
         padding: 0.5rem 0.5rem 0.5rem 12rem;
+
+        a.button {
+            &::before {
+                padding-top: 0.3rem;
+                display    : block;
+                content    : "\f007";
+                font-weight: 900;
+                font-family: "Font Awesome 5 Free";
+                margin-left: 0.5rem;
+            }
+
+            span {
+                visibility: hidden;
+                width     : 0;
+                height    : 0;
+                overflow  : hidden;
+            }
+        }
     }
 
     #search-wrapper {
@@ -227,14 +245,25 @@ body:not(.main-homepage) {
         position   : relative;
         margin     : 0;
         margin-left: 1rem;
+        z-index    : 2;
     }
 
-    [id="portal-anontools"]>ul>li {
-        display       : flex;
-        flex-direction: column;
+    [id="portal-anontools"] {
+        z-index         : 1;
+        display         : block;
+        background-color: @spirit-header-bg;
+        width           : 100%;
+        height          : auto;
+        position        : absolute;
+        top             : 0;
 
-        a {
-            margin-right: 2rem;
+        &>ul>li {
+            display       : flex;
+            flex-direction: column;
+
+            a {
+                margin-right: 2rem;
+            }
         }
     }
 
