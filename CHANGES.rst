@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.2.0a7 (unreleased)
+1.2.0a7 (2020-06-22)
 --------------------
 
 - Fix slider on homepage
