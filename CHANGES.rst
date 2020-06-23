@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.2.0a9 (unreleased)
+1.2.0a9 (2020-06-23)
 --------------------
 
 - Fix style on homepage, action view, faceted
