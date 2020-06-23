@@ -27,7 +27,7 @@ header {
     margin    : -1.5em 0 0 3em;
     background: #fff;
     text-align: center;
-    z-index   : 1;
+    z-index   : 2;
 
     img {
         max-width : 100%;
@@ -52,6 +52,7 @@ header {
     font-size : 16px;
     padding   : 1em;
     position  : relative;
+    display   : inline-block;
 
     a {
         cursor         : pointer;
@@ -59,7 +60,7 @@ header {
         text-transform : capitalize;
         opacity        : 0.8;
         display        : flex;
-        justify-content: end;
+        justify-content: flex-end;
         align-items    : center;
         white-space    : nowrap;
 
@@ -246,6 +247,7 @@ body:not(.main-homepage) {
         margin     : 0;
         margin-left: 1rem;
         z-index    : 2;
+        display    : inline-block;
     }
 
     [id="portal-anontools"] {
@@ -269,5 +271,17 @@ body:not(.main-homepage) {
 
     body:not(.main-homepage) .portal-banner .bannerImage img {
         max-height: 30vh;
+    }
+
+    .template-logged-out,
+    .template-login {
+        #content-header {
+            min-height: 12rem;
+        }
+    }
+
+    .plone-modal-dialog,
+    .plone-modal-content {
+        max-width: 100%;
     }
 }

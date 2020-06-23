@@ -5,7 +5,8 @@ Changelog
 1.2.0a9 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Fix style on homepage, action view, faceted
+  [Aurore]
 
 
 1.2.0a8 (2020-06-23)
