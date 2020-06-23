@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.2.0a10 (unreleased)
+1.2.0a10 (2020-06-23)
 ---------------------
 
 - Fix action view
