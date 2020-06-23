@@ -5,7 +5,8 @@ Changelog
 1.2.0a10 (unreleased)
 ---------------------
 
-- Nothing changed yet.
+- Fix action view
+  [Aurore]
 
 
 1.2.0a9 (2020-06-23)
