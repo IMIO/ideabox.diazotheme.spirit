@@ -5,6 +5,9 @@ Changelog
 1.2.0a11 (unreleased)
 ---------------------
 
+- Change font size
+  [Aurore]
+
 - Fix a JS error with flexslider
   [mpeeters]
 
