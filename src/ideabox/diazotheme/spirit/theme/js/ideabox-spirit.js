@@ -122,11 +122,13 @@ $(document).ready(function() {
     });
 
     function resize() {
-        var limit = $('.flexslider').attr('data-slider');
-        var gridSize = getGridSize(limit);
+        $('.flexslider').each(function() {
+          var limit = $(this).attr('data-slider');
+          var gridSize = getGridSize(limit);
 
-        $('.flexslider').data('flexslider').vars.minItems = gridSize;
-        $('.flexslider').data('flexslider').vars.maxItems = gridSize;
+          $(this).data('flexslider').vars.minItems = gridSize;
+          $(this).data('flexslider').vars.maxItems = gridSize;
+        });
     }
 
     $(document).mouseup(function(e){

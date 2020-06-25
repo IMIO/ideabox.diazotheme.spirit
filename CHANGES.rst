@@ -5,7 +5,8 @@ Changelog
 1.2.0a11 (unreleased)
 ---------------------
 
-- Nothing changed yet.
+- Fix a JS error with flexslider
+  [mpeeters]
 
 
 1.2.0a10 (2020-06-23)
