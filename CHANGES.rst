@@ -5,6 +5,9 @@ Changelog
 1.2.0a11 (unreleased)
 ---------------------
 
+- Fix menu
+  [Aurore]
+
 - Change font size
   [Aurore]
 

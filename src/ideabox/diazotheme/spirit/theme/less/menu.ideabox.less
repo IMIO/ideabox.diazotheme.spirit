@@ -64,7 +64,7 @@
                     align-items    : stretch;
 
                     &>li>a {
-                        display: flex;
+                        display: inline-block;
 
                         &::before {
                             content            : " ";
@@ -79,7 +79,8 @@
                             background-size    : contain;
                             background-color   : @spirit-pink;
                             border             : 15px solid @spirit-pink;
-                            display            : inline-block;
+                            display            : block;
+                            float              : left;
                         }
                     }
 
