@@ -5,7 +5,8 @@ Changelog
 1.2.0a12 (unreleased)
 ---------------------
 
-- Nothing changed yet.
+- Fix header logo for responsive
+  [Aurore]
 
 
 1.2.0a11 (2020-06-26)
