@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rules xmlns="http://namespaces.plone.org/diazo"
-       xmlns:css="http://namespaces.plone.org/diazo/css"
-       xmlns:xhtml="http://www.w3.org/1999/xhtml"
-       xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-       xmlns:xi="http://www.w3.org/2001/XInclude">
+<rules xmlns="http://namespaces.plone.org/diazo" 
+  xmlns:css="http://namespaces.plone.org/diazo/css" 
+  xmlns:xhtml="http://www.w3.org/1999/xhtml" 
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+  xmlns:xi="http://www.w3.org/2001/XInclude">
 
   <theme href="index.html" />
   <notheme css:if-not-content="#visual-portal-wrapper" />
@@ -66,22 +66,22 @@
   <!-- Left column -->
   <rules css:if-content="#portal-column-one">
     <replace css:theme="#column1-container">
-        <div id="sidebar" class="col-xs-6 col-sm-3 sidebar-offcanvas">
-          <aside id="portal-column-one">
-              <xsl:copy-of css:select="#portal-column-one > *" />
-          </aside>
-        </div>
+      <div id="sidebar" class="col-xs-6 col-sm-3 sidebar-offcanvas">
+        <aside id="portal-column-one">
+          <xsl:copy-of css:select="#portal-column-one > *" />
+        </aside>
+      </div>
     </replace>
   </rules>
 
   <!-- Right column -->
   <rules css:if-content="#portal-column-two">
     <replace css:theme="#column2-container">
-        <div id="sidebar" class="col-xs-6 col-sm-3 sidebar-offcanvas" role="complementary">
-          <aside id="portal-column-two">
-              <xsl:copy-of css:select="#portal-column-two > *" />
-          </aside>
-        </div>
+      <div id="sidebar" class="col-xs-6 col-sm-3 sidebar-offcanvas" role="complementary">
+        <aside id="portal-column-two">
+          <xsl:copy-of css:select="#portal-column-two > *" />
+        </aside>
+      </div>
     </replace>
   </rules>
   <!-- Content header -->
@@ -94,14 +94,15 @@
   <!-- toolbar -->
   <replace css:theme="#portal-toolbar" css:content-children="#edit-bar" css:if-not-content=".ajax_load" css:if-content=".userrole-authenticated" />
   <replace css:theme="#anonymous-actions" css:content-children="#portal-personaltools-wrapper" css:if-not-content=".ajax_load" css:if-content=".userrole-anonymous" />
-  
+  <replace css:theme="#personaltools-infos" css:content="#personaltools-infos" css:if-not-content=".ajax_load" css:if-content=".userrole-authenticated" />
+
   <!-- Rules for spirit -->
   <merge if="$is_homepage" attributes="class" css:theme="body" css:content="body"/>
   <after css:theme-children="head">
-      <script type="text/javascript" src="/++theme++spirit/js/jquery.flexslider.js" />
-      <script type="text/javascript" src="/++theme++spirit/js/ideabox-spirit.js" />
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
-      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700|Abel|Ropa Sans" media="all" rel="stylesheet" title="Google font Abel" type="text/css" />
+    <script type="text/javascript" src="/++theme++spirit/js/jquery.flexslider.js" />
+    <script type="text/javascript" src="/++theme++spirit/js/ideabox-spirit.js" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700|Abel|Ropa Sans" media="all" rel="stylesheet" title="Google font Abel" type="text/css" />
   </after>
   <after if-not="$is_homepage" css:content="#portal-banner">
     <xsl:copy-of select="../*[@id='portal-breadcrumbs']"/>
@@ -109,7 +110,7 @@
   <drop css:content=".dynamicSectionExploreLabel"/>
   <drop css:content="#portal-breadcrumbs"/>
 
-    <!-- Search -->
+  <!-- Search -->
   <replace css:theme="#searchbox-content" css:content="#portal-searchbox > *"></replace>
   <drop css:content="#portal-searchbox"/>
 </rules>

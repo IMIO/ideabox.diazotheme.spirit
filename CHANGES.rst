@@ -5,6 +5,9 @@ Changelog
 1.2.0a11 (unreleased)
 ---------------------
 
+- Add folder in user action
+  [Aurore]
+
 - Fix menu
   [Aurore]
 

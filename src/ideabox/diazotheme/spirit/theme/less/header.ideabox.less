@@ -11,6 +11,7 @@ header {
 [id="portal-header"] {
     position: relative;
     width   : 100%;
+    order   : 1;
 }
 
 [id="content-header"] {
@@ -39,11 +40,43 @@ header {
 [id="portal-anontools"] a {
     color      : @color-light;
     margin-left: 2rem;
+    color      : @color-light;
+    opacity    : 0.8;
+    font-size  : 14px;
+    font-weight: 700;
+
+    &:focus,
+    &:active,
+    &:hover {
+        opacity: 1;
+    }
 }
 
 // MENU USER
 #portal-membertools-wrapper {
     display: none;
+}
+
+#personaltools-infos {
+    order          : 2;
+    display        : inline-flex;
+    white-space    : nowrap;
+    align-items    : center;
+    justify-content: center;
+    color          : @color-light;
+    opacity        : 0.8;
+    font-size      : 14px;
+    font-weight    : 700;
+
+    &:active,
+    &:focus,
+    &:hover {
+        opacity: 1;
+    }
+}
+
+#anonymous-actions {
+    order: 4;
 }
 
 #portal-user {
@@ -53,6 +86,7 @@ header {
     padding   : 1em;
     position  : relative;
     display   : inline-block;
+    order     : 3;
 
     a {
         cursor         : pointer;
