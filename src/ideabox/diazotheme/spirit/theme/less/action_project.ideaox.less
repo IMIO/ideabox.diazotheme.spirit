@@ -142,6 +142,12 @@
                     a {
                         font-size: 16px;
                         color    : @color-dark;
+
+                        &:active,
+                        &:focus,
+                        &:hover {
+                            color: @spirit-pink;
+                        }
                     }
                 }
 
@@ -151,6 +157,10 @@
                     padding   : 3rem;
                     text-align: center;
                     font-size : 1.6rem;
+
+                    a {
+                        color: @color-dark;
+                    }
 
                     .state-switch {
                         display        : flex;
@@ -244,6 +254,11 @@
     }
 
     @media (max-width: 992px) {
+
+        #action_project {
+            margin-top: 0;
+        }
+
         #content #action_project {
             flex-direction: column;
 

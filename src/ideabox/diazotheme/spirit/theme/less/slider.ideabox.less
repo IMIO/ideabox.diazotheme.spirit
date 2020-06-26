@@ -276,7 +276,7 @@ html[xmlns] .flexslider .slides {
           content       : " ";
           width         : 100%;
           padding-bottom: 60%;
-          margin-bottom: 0;
+          margin-bottom : 0;
           transition    : margin-bottom 0.5s;
           min-height    : 9rem;
         }
@@ -299,12 +299,12 @@ html[xmlns] .flexslider .slides {
         }
 
         .flex-caption-inner {
-          height            : 100%;
-          padding           : 2rem 2rem 4rem 2rem;
-          background-color  : @color-light;
+          height          : 100%;
+          padding         : 2rem 2rem 4rem 2rem;
+          background-color: @color-light;
           margin-bottom   : -9rem;
-          margin-top        : 0;
-          transition        : margin-bottom 0.5s;
+          margin-top      : 0;
+          transition      : margin-bottom 0.5s;
 
           h2 {
             line-height: 25px;
@@ -570,5 +570,20 @@ html[xmlns] .flexslider .slides {
 
   .voir-tout {
     margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .slider-multiple .carousel.flexslider ul.slides li {
+    display       : flex !important;
+    flex-direction: column;
+
+    .flex-caption {
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
   }
 }
