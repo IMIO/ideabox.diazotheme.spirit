@@ -9,6 +9,8 @@
 
   <includeDependencies package="." />
 
+  <include file="upgrades.zcml" />
+
   <include package=".browser" />
 
   <plone:static
