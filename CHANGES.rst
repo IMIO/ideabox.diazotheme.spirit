@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.2.0a11 (unreleased)
+1.2.0a11 (2020-06-26)
 ---------------------
 
 - Add folder in user action
