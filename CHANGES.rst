@@ -5,6 +5,21 @@ Changelog
 1.2.0a12 (unreleased)
 ---------------------
 
+- Display sorting widget title on faceted view
+  [mpeeters]
+
+- Reduce content width to increase readabiliy
+  [mpeeters]
+
+- Hide lead image on news content types
+  [mpeeters]
+
+- Adapt style for links on project progress column
+  [mpeeters]
+
+- Fix typo in filename
+  [mpeeters]
+
 - Fix header logo for responsive
   [Aurore]
 
