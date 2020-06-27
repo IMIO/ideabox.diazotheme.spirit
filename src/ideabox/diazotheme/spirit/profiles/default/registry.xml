@@ -40,6 +40,6 @@
         <value key="enabled">True</value>
         <value key="compile">True</value>
         <value key="csscompilation">++plone++spirit.less/theme-compiled.css</value>
-        <value key="last_compilation">2020-06-23 15:50:00</value>
+        <value key="last_compilation">2020-06-27 16:30:00</value>
     </records>
 </registry>

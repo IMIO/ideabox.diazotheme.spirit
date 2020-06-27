@@ -10,4 +10,12 @@
     handler=".upgrades.to_1001"
     />
 
+  <genericsetup:upgradeStep
+    source="*"
+    destination="1002"
+    title="Reload registry resources"
+    profile="ideabox.diazotheme.spirit:default"
+    handler=".upgrades.reload_registry"
+    />
+
 </configure>
