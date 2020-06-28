@@ -5,6 +5,9 @@ Changelog
 1.2.0a12 (unreleased)
 ---------------------
 
+- Fix hover on first action in tiles for responsive
+  [mpeeters]
+
 - Display sorting widget title on faceted view
   [mpeeters]
 
