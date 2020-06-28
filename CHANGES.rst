@@ -5,6 +5,9 @@ Changelog
 1.2.0a12 (unreleased)
 ---------------------
 
+- Design the REST import action link
+  [mpeeters]
+
 - Fix hover on first action in tiles for responsive
   [mpeeters]
 
