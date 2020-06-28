@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.2.0a12 (unreleased)
+1.2.0a12 (2020-06-28)
 ---------------------
 
 - Design the REST import action link
