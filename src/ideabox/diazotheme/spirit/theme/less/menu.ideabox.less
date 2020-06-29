@@ -88,7 +88,7 @@
                     &>li {
                         background-color: rgba(0, 0, 0, 0.8);
                         font-family     : @ideabox-font-primary;
-                        font-size       : 2.2rem;
+                        font-size       : 2rem;
                         line-height     : 2.4rem;
                         padding         : 3rem;
                         text-transform  : uppercase;
@@ -112,7 +112,7 @@
                         }
 
                         &>a {
-                            font-size  : 2.2rem;
+                            font-size  : 2rem;
                             line-height: 2.4rem;
                             height     : 100%;
                             width      : 100%;
@@ -195,23 +195,27 @@
 
 @media (max-width: 1200px) {
 
-    [id="mainnavigation-wrapper"] #portal-globalnav-wrapper .container #portal-globalnav-collapse {
-        #portal-globalnav {
+    [id="mainnavigation-wrapper"] {
+        margin-top: 2rem;
 
-            &>li {
-                padding: 1rem;
+        #portal-globalnav-wrapper .container #portal-globalnav-collapse {
+            #portal-globalnav {
 
-                &>a {
-                    display        : flex;
-                    flex-direction : column;
-                    justify-content: start;
-                    align-items    : center;
-                    text-align     : center;
+                &>li {
+                    padding: 1rem;
 
-                    &::before {
-                        margin-right : 0;
-                        margin-bottom: 1rem;
-                        float        : none;
+                    &>a {
+                        display        : flex;
+                        flex-direction : column;
+                        justify-content: start;
+                        align-items    : center;
+                        text-align     : center;
+
+                        &::before {
+                            margin-right : 0;
+                            margin-bottom: 1rem;
+                            float        : none;
+                        }
                     }
                 }
             }
@@ -221,18 +225,22 @@
 
 @media (max-width: 992px) {
 
-    [id="mainnavigation-wrapper"] #portal-globalnav-wrapper .container #portal-globalnav-collapse {
-        #portal-globalnav {
+    [id="mainnavigation-wrapper"] {
+        margin-top: 5rem;
 
-            &>li {
+        #portal-globalnav-wrapper .container #portal-globalnav-collapse {
+            #portal-globalnav {
 
-                &>a {
-                    padding        : 0.5rem;
-                    font-size      : 1.8rem;
-                }
+                &>li {
 
-                ul {
-                    padding: 0 0.5rem !important;
+                    &>a {
+                        padding  : 0.5rem;
+                        font-size: 1.8rem;
+                    }
+
+                    ul {
+                        padding: 0 0.5rem !important;
+                    }
                 }
             }
         }
@@ -246,11 +254,12 @@
     }
 
     #mainnavigation-wrapper {
-        top      : 100%;
-        padding  : 0;
-        position : absolute;
-        z-index  : 2;
-        transform: none;
+        top       : 100%;
+        padding   : 0;
+        position  : absolute;
+        z-index   : 2;
+        transform : none;
+        margin-top: 0;
 
         #mainnavigation {
             display         : none;
@@ -264,6 +273,7 @@
                 padding       : 0;
                 margin        : 0 !;
                 flex-direction: column;
+                box-shadow    : 0 1px 3px rgba(0, 0, 0, 0.2);
 
                 li {
                     border-bottom: 1px solid #f2f2f2;
@@ -327,6 +337,7 @@
 
                         ul.dropdown {
                             display: none;
+                            padding: 0 !important;
                         }
 
                         label {
@@ -406,7 +417,8 @@
             background-color: @color-dark;
             color           : @color-light;
             margin          : 0;
-            padding         : 1rem;
+            padding         : 1rem 2rem 1rem 1rem;
+            text-align      : right;
 
             &::before {
                 content     : "\f0c9";

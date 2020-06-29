@@ -37,18 +37,44 @@ header {
 }
 
 //SITE ACTION
-[id="portal-anontools"] a {
-    color      : @color-light;
-    margin-left: 2rem;
-    color      : @color-light;
-    opacity    : 0.8;
-    font-size  : 14px;
-    font-weight: 700;
+#portal-anontools {
+    display: none;
+}
 
-    &:focus,
-    &:active,
-    &:hover {
-        opacity: 1;
+#portal-header #portal-anontools {
+    display: block;
+
+    a {
+        color      : @color-light;
+        margin-left: 2rem;
+        color      : @color-light;
+        opacity    : 0.8;
+        font-size  : 14px;
+        font-weight: 700;
+
+        &:focus,
+        &:active,
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+#portal-anontools {
+
+    a {
+        color      : @color-light;
+        margin-left: 2rem;
+        color      : @color-light;
+        opacity    : 0.8;
+        font-size  : 14px;
+        font-weight: 700;
+
+        &:focus,
+        &:active,
+        &:hover {
+            opacity: 1;
+        }
     }
 }
 
@@ -230,9 +256,22 @@ body:not(.main-homepage) {
     }
 }
 
+@media (max-width: 992px) {
+    #portal-logo {
+        width : 125px;
+        height: 125px;
+    }
+}
+
 //MOBILE
 @media (max-width: 767px) {
+
+    #portal-anontools {
+        display: block;
+    }
+
     #content-header {
+
         &>.container {
             flex-direction: column-reverse;
 
@@ -241,17 +280,46 @@ body:not(.main-homepage) {
                 position: absolute;
                 top     : 0;
                 left    : 0;
+
+                #portal-anontools {
+                    display: none;
+                }
             }
         }
     }
 
     #personaltools-infos {
-        padding        : 0.5rem 1rem 0.5rem 12rem;
-        justify-content: flex-end
+        padding        : 1rem 2rem 1rem 12rem;
+        justify-content: flex-end;
+        font-size      : 1.4rem;
+
+        &:empty {
+            display: none;
+        }
+    }
+
+    .userrole-anonymous #portal-user {
+        display: none;
     }
 
     #portal-user {
-        padding: 0.5rem 0.5rem 0.5rem 12rem;
+        padding: 0.5rem 1.5rem 0 12rem;
+
+        #user-menu-actions {
+            position     : relative;
+            margin-bottom: 0;
+            padding      : 0;
+            font-weight  : 700;
+
+            li {
+                margin : 0;
+                padding: 0;
+
+                a {
+                    padding: 1rem 1rem 0.5rem 0;
+                }
+            }
+        }
 
         a.button {
             &::before {
@@ -261,6 +329,11 @@ body:not(.main-homepage) {
                 font-weight: 900;
                 font-family: "Font Awesome 5 Free";
                 margin-left: 0.5rem;
+                font-size  : 2rem;
+            }
+
+            &::after {
+                font-size: 2rem;
             }
 
             span {
@@ -284,10 +357,10 @@ body:not(.main-homepage) {
         height     : 100px;
         width      : 100px;
         box-shadow : none;
-        position   : relative;
+        position   : absolute;
         margin     : 0;
         margin-left: 1rem;
-        z-index    : 2;
+        z-index    : 3;
         display    : inline-block;
     }
 
@@ -297,7 +370,7 @@ body:not(.main-homepage) {
         background-color: @spirit-header-bg;
         width           : 100%;
         height          : auto;
-        position        : absolute;
+        position        : relative;
         top             : 0;
         padding-left    : 11rem;
 
@@ -306,7 +379,8 @@ body:not(.main-homepage) {
             flex-direction: column;
 
             a {
-                margin-right: 3rem;
+                margin : 0;
+                padding: 0.5rem 2rem 0 0 !important;
             }
 
             #personaltools-infos {
@@ -317,13 +391,6 @@ body:not(.main-homepage) {
 
     body:not(.main-homepage) .portal-banner .bannerImage img {
         max-height: 30vh;
-    }
-
-    .template-logged-out,
-    .template-login {
-        #content-header {
-            min-height: 12rem;
-        }
     }
 
     .plone-modal-dialog,

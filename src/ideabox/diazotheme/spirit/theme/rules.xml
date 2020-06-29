@@ -95,6 +95,7 @@
   <replace css:theme="#portal-toolbar" css:content-children="#edit-bar" css:if-not-content=".ajax_load" css:if-content=".userrole-authenticated" />
   <replace css:theme="#anonymous-actions" css:content-children="#portal-personaltools-wrapper" css:if-not-content=".ajax_load" css:if-content=".userrole-anonymous" />
   <replace css:theme="#personaltools-infos" css:content="#personaltools-infos" css:if-not-content=".ajax_load" css:if-content=".userrole-authenticated" />
+  <replace css:theme="#portal-anontools" css:content="#portal-anontools" css:if-not-content=".ajax_load" css:if-content=".userrole-anonymous" />
 
   <!-- Rules for spirit -->
   <merge if="$is_homepage" attributes="class" css:theme="body" css:content="body"/>
