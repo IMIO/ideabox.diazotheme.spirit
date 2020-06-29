@@ -14,7 +14,7 @@ long_description = '\n\n'.join([
 
 setup(
     name='ideabox.diazotheme.spirit',
-    version='1.2.0a13',
+    version='1.2.0a14.dev0',
     description="Spirit theme for Ideabox",
     long_description=long_description,
     # Get more from https://pypi.python.org/pypi?%3Aaction=list_classifiers
