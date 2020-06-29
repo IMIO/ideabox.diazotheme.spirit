@@ -5,6 +5,9 @@ Changelog
 1.2.0a14 (unreleased)
 ---------------------
 
+- Fix slider for old version firefox
+  [Aurore]
+
 - Change style for faceted and fix slider
   [Aurore]
 
