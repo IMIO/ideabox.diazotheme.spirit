@@ -7,6 +7,7 @@ Changelog
 
 - Move "infos" action after all other user actions
   [mpeeters]
+  
 - Fix header for responsive
   [Aurore]
 
