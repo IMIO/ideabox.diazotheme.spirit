@@ -5,6 +5,9 @@ Changelog
 1.2.0a14 (unreleased)
 ---------------------
 
+- Move "infos" action after all other user actions
+  [mpeeters]
+
 - Add state on menu for responsive
   [Aurore]
 
