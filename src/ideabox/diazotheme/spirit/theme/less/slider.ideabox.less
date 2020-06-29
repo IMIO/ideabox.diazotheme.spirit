@@ -374,8 +374,9 @@ html[xmlns] .flexslider .slides {
       }
 
       .slider_multiple_link {
-        font-size: 18px;
-        color    : @color-dark;
+        font-size    : 18px;
+        color        : @color-dark;
+        margin-bottom: 2rem;
       }
 
       .image-background {
@@ -535,50 +536,19 @@ html[xmlns] .flexslider .slides {
 }
 
 @media (max-width: 992px) {
-  .slider-multiple .carousel.flexslider ul.slides li::before {
-    display: none;
-  }
-
-  .slider-multiple .carousel.flexslider ul.slides li .flex-caption .flex-caption-inner {
-    position     : relative;
-    margin-top   : 0 !important;
-    height       : auto;
-    width        : auto;
-    padding      : 3rem 2rem;
-    margin-bottom: 0 !important;
-
-    &::after {
-      display: none;
-    }
-  }
-
-  .slider-multiple .carousel.flexslider.one .flex-direction-nav li {
-    transform: none;
-  }
-
-  .flex-control-nav {
-    position  : relative;
-    margin-top: 2rem;
-    bottom    : 0;
-  }
-
-  .flex-direction-nav {
-    li {
-      margin-top: 0 !important;
-    }
-  }
-
-  .voir-tout {
-    margin-bottom: 2rem;
-  }
-}
-
-@media (max-width: 767px) {
   .slider-multiple .carousel.flexslider ul.slides li {
     display       : flex !important;
     flex-direction: column;
 
+    &::before {
+      display: none;
+    }
+
     .flex-caption {
+
+      .flex-caption-inner {
+        margin-bottom: 0;
+      }
 
       &::before,
       &::after {

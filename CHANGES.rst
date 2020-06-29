@@ -5,6 +5,9 @@ Changelog
 1.2.0a14 (unreleased)
 ---------------------
 
+- Change style for faceted and fix slider
+  [Aurore]
+
 - Move "infos" action after all other user actions
   [mpeeters]
   
