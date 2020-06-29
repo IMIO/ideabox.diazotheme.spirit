@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.2.0a14 (unreleased)
+1.2.0a14 (2020-06-29)
 ---------------------
 
 - Adapt faceted view for news
