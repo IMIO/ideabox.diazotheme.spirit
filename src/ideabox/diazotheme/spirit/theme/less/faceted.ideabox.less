@@ -310,90 +310,130 @@
 
 		.news {
 			overflow: hidden;
-			border  : 1px solid #ddd;
+      border    : 1px solid #e6e6e6;
+      min-height: 25em;
+      position: relative;
 
-			a {
-				margin-top           : 0 !important;
-				position             : relative;
-				display              : grid;
-				grid-template-columns: 1fr;
-				grid-template-rows   : 1fr;
-				height               : 100%;
+      &::after {
+        content         : "+";
+        background-color: @spirit-pink;
+        color           : @color-light;
+        font-size       : 2rem;
+        font-weight     : bold;
+        position        : absolute;
+        right           : 1rem;
+        bottom          : -5rem;
+        display         : flex;
+        justify-content : center;
+        align-items     : center;
+        height          : 5rem;
+        width           : 5rem;
+        transition      : bottom 0.5s;
+        z-index         : 1;
+      }
+
+      &::before {
+        content: " ";
+        display: block;
+        position: absolute;
+        height: 15rem;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(transparent 30%, white 80%);
+        width: 100%;
+        z-index: 2;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        &::after {
+          bottom: 1rem;
+        }
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        .caption {
+
+          .caption-inner {
+            margin-bottom: 0;
+          }
+
+          &::before {
+            margin-bottom: -15rem;
+          }
+        }
+
+        &::before {
+          display: none;
+        }
+      }
+
+			.Item {
+        position: absolute;
+        top     : 0;
+        left    : 0;
+        height  : 100%;
+        width   : 100%;
 
 				.image {
-					width              : 100%;
-					padding-bottom     : 60%;
-					background-repeat  : no-repeat;
-					background-position: center;
-					background-size    : cover;
-					grid-row           : 1;
-					grid-column        : 1;
-					margin-bottom      : 9rem;
+          position           : absolute;
+          top                : 0;
+          left               : 0;
+          width: 100%;
+          padding-top: 60%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
 				}
+      }
 
-				.text {
-					font-family: @ideabox-font-primary;
-					font-size  : 1.8rem;
-					color      : @color-dark;
-					grid-row   : 1;
-					grid-column: 1;
-					transform  : translateY(calc(100% - 9rem));
-					transition : all 0.5s;
-					margin-bottom   : 2rem;
+      .caption {
+        padding : 0;
+        position: relative;
+        z-index : 1;
 
-					h3 {
-						background-color: @color-light;
-						padding         : 2rem 2rem 5rem 2rem;
-						height          : 100%;
-						font-size       : 1.8rem;
-						font-weight     : 400;
-						color           : @color-dark;
+        &::before {
+          display       : block;
+          content       : " ";
+          width         : 100%;
+          padding-bottom: 60%;
+          margin-bottom : 0;
+          transition    : margin-bottom 0.5s;
+          min-height    : 15rem;
+        }
 
-						&::before {
-							content         : "+";
-							background-color: @spirit-pink;
-							color           : @color-light;
-							font-size       : 2rem;
-							font-weight     : bold;
-							position        : absolute;
-							bottom          : 1rem;
-							right           : 1rem;
-							display         : flex;
-							justify-content : center;
-							align-items     : center;
-							height          : 5rem;
-							width           : 5rem;
-						}
+				.caption-inner {
+          height          : 100%;
+          padding         : 2rem 2rem 6rem 2rem;
+          background-color: @color-light;
+          margin-bottom   : -15rem;
+          margin-top      : 0;
+          transition      : margin-bottom 0.5s;
+
+					h2 {
+            line-height: 25px;
+            height     : 100%;
+            margin-top : 0 !important;
+
+            a {
+              height   : 100%;
+              font-size: 18px;
+              display  : inline-block;
+						  color    : @color-dark;
+              &::hover {
+                color    : @color-dark;
+              }
+            }
+
 					}
 
 					.description {
 						display: none;
 					}
-				}
 
-				&::before {
-					content         : " ";
-					display         : block;
-					position        : absolute;
-					height          : 9rem;
-					bottom          : 0;
-					left            : 0;
-					background-image: linear-gradient(transparent 30%, white 80%);
-					width           : 100%;
-					z-index         : 1;
-					transition      : background-image 1s;
-				}
-
-				&:hover,
-				&:active,
-				&:focus {
-					.text {
-						transform: translateY(0%);
-					}
-
-					&::before {
-						background-image: linear-gradient(transparent 30%, transparent 80%);
-					}
 				}
 			}
 		}

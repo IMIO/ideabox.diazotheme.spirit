@@ -5,6 +5,9 @@ Changelog
 1.2.0a14 (unreleased)
 ---------------------
 
+- Adapt faceted view for news
+  [mpeeters]
+
 - Fix slider for old version firefox
   [Aurore]
 
@@ -13,7 +16,7 @@ Changelog
 
 - Move "infos" action after all other user actions
   [mpeeters]
-  
+
 - Fix header for responsive
   [Aurore]
 
