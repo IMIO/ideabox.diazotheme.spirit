@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.2.0a13 (unreleased)
+1.2.0a13 (2020-06-29)
 ---------------------
 
 - Fix header for responsive
