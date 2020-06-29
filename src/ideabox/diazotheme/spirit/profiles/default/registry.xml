@@ -36,10 +36,10 @@
         <value key="resources">
             <element>plonetheme.custom</element>
         </value>
-        <value key="merge_with">default</value>
+        <value key="merge_with"></value>
         <value key="enabled">True</value>
         <value key="compile">True</value>
         <value key="csscompilation">++plone++spirit.less/theme-compiled.css</value>
-        <value key="last_compilation">2020-06-28 13:00:00</value>
+        <value key="last_compilation">2020-06-29 22:30:00</value>
     </records>
 </registry>
