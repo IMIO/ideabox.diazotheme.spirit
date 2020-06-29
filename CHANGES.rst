@@ -5,7 +5,8 @@ Changelog
 1.2.0a14 (unreleased)
 ---------------------
 
-- Nothing changed yet.
+- Add state on menu for responsive
+  [Aurore]
 
 
 1.2.0a13 (2020-06-29)
