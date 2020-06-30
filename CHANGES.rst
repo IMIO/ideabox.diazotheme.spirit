@@ -5,7 +5,8 @@ Changelog
 1.2.0a15 (unreleased)
 ---------------------
 
-- Nothing changed yet.
+- Adapt url for "More infos" action
+  [mpeeters]
 
 
 1.2.0a14 (2020-06-29)
