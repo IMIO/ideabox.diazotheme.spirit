@@ -2,8 +2,8 @@ Changelog
 =========
 
 
-1.2.0a15 (unreleased)
----------------------
+1.2.0 (2020-06-30)
+------------------
 
 - Adapt url for "More infos" action
   [mpeeters]
