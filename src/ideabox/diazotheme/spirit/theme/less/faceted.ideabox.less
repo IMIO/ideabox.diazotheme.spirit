@@ -309,124 +309,100 @@
 		margin-bottom        : 4em;
 
 		.news {
-			overflow: hidden;
-      border    : 1px solid #e6e6e6;
-      min-height: 25em;
-      position: relative;
+			overflow  : hidden;
+			border    : 1px solid #e6e6e6;
+			min-height: 25em;
+			position  : relative;
 
-      &::after {
-        content         : "+";
-        background-color: @spirit-pink;
-        color           : @color-light;
-        font-size       : 2rem;
-        font-weight     : bold;
-        position        : absolute;
-        right           : 1rem;
-        bottom          : -5rem;
-        display         : flex;
-        justify-content : center;
-        align-items     : center;
-        height          : 5rem;
-        width           : 5rem;
-        transition      : bottom 0.5s;
-        z-index         : 1;
-      }
+			&::after {
+				content         : "+";
+				background-color: @spirit-pink;
+				color           : @color-light;
+				font-size       : 2rem;
+				font-weight     : bold;
+				position        : absolute;
+				right           : 1rem;
+				bottom          : -5rem;
+				display         : flex;
+				justify-content : center;
+				align-items     : center;
+				height          : 5rem;
+				width           : 5rem;
+				transition      : bottom 0.5s;
+				z-index         : 1;
+			}
 
-      &::before {
-        content: " ";
-        display: block;
-        position: absolute;
-        height: 15rem;
-        bottom: 0;
-        left: 0;
-        background-image: linear-gradient(transparent 30%, white 80%);
-        width: 100%;
-        z-index: 2;
-      }
-
-      &:hover,
-      &:active,
-      &:focus {
-        &::after {
-          bottom: 1rem;
-        }
-      }
-
-      &:hover,
-      &:active,
-      &:focus {
-        .caption {
-
-          .caption-inner {
-            margin-bottom: 0;
-          }
-
-          &::before {
-            margin-bottom: -15rem;
-          }
-        }
-
-        &::before {
-          display: none;
-        }
-      }
+			&::before {
+				content         : " ";
+				display         : block;
+				position        : absolute;
+				height          : 15rem;
+				bottom          : 0;
+				left            : 0;
+				background-image: linear-gradient(transparent 30%, white 80%);
+				width           : 100%;
+				z-index         : 2;
+			}
 
 			.Item {
-        position: absolute;
-        top     : 0;
-        left    : 0;
-        height  : 100%;
-        width   : 100%;
+				position: absolute;
+				top     : 0;
+				left    : 0;
+				height  : 100%;
+				width   : 100%;
 
 				.image {
-          position           : absolute;
-          top                : 0;
-          left               : 0;
-          width: 100%;
-          padding-top: 60%;
-          background-repeat: no-repeat;
-          background-size: cover;
-          background-position: center;
+					position             : absolute;
+					top                  : 0;
+					left                 : 0;
+					width                : 100%;
+					padding-top          : 60%;
+					background-repeat    : no-repeat;
+					background-size      : cover;
+					background-position  : center;
+					transition           : padding-top 0.5s;
+					background-position-y: top;
 				}
-      }
+			}
 
-      .caption {
-        padding : 0;
-        position: relative;
-        z-index : 1;
+			.caption {
+				padding : 0;
+				position: relative;
+				z-index : 1;
 
-        &::before {
-          display       : block;
-          content       : " ";
-          width         : 100%;
-          padding-bottom: 60%;
-          margin-bottom : 0;
-          transition    : margin-bottom 0.5s;
-          min-height    : 15rem;
-        }
+				&::before {
+					display       : block;
+					content       : " ";
+					width         : 100%;
+					padding-bottom: 60%;
+					margin-bottom : 0;
+					transition    : margin-bottom 0.5s;
+					min-height    : 15rem;
+				}
 
 				.caption-inner {
-          height          : 100%;
-          padding         : 2rem 2rem 6rem 2rem;
-          background-color: @color-light;
-          margin-bottom   : -15rem;
-          margin-top      : 0;
-          transition      : margin-bottom 0.5s;
+					height          : 100%;
+					padding         : 2rem 2rem 6rem 2rem;
+					background-color: @color-light;
+					margin-bottom   : -15rem;
+					margin-top      : 0;
+					transition      : margin-bottom 0.5s;
 
 					h2 {
-            line-height: 25px;
-            height     : 100%;
-            margin-top : 0 !important;
+						line-height: 25px;
+						height     : 100%;
+						margin-top : 0 !important;
 
-            a {
-              height   : 100%;
-              font-size: 18px;
-              display  : inline-block;
-						  color    : @color-dark;
-              &::hover {
-                color    : @color-dark;
-              }
-            }
+						a {
+							height   : 100%;
+							font-size: 18px;
+							display  : inline-block;
+							color    : @color-dark;
+
+							&::hover {
+								color: @color-dark;
+							}
+						}
 
 					}
 
@@ -434,6 +410,37 @@
 						display: none;
 					}
 
+				}
+			}
+
+			&:hover,
+			&:active,
+			&:focus {
+				&::after {
+					bottom: 1rem;
+				}
+
+				.caption {
+
+					.caption-inner {
+						margin-bottom: 0;
+					}
+
+					&::before {
+						margin-bottom: -15rem;
+					}
+				}
+
+				&::before {
+					display: none;
+				}
+
+				.Item {
+					z-index: 2;
+
+					.image {
+						padding-top: 0;
+					}
 				}
 			}
 		}
@@ -458,6 +465,35 @@
 	.template-facetednavigation_view #faceted-form #top-area .faceted-widgets .faceted-select-widget fieldset form {
 		flex-direction: column;
 		align-items   : flex-start;
+	}
+
+	.template-facetednavigation_view #news_facet_view {
+		display       : flex;
+		flex-direction: column;
+
+		.news {
+			min-height: 0;
+
+			.Item {
+				position: relative;
+
+				.image {
+					position: relative;
+				}
+			}
+
+			&::before,
+			&::after,
+			.caption::before {
+				display: none !important;
+			}
+
+			.caption .caption-inner {
+				padding      : 2rem;
+				margin-bottom: 0;
+				transition   : none;
+			}
+		}
 	}
 
 	.template-facetednavigation_view .pagination {

@@ -5,6 +5,9 @@ Changelog
 1.2.1 (unreleased)
 ------------------
 
+- Adapt faceted, tile and header for responsive
+  [Aurore]
+
 - Add "+" on action tile and grey background to slider tile
   [Aurore]
 
