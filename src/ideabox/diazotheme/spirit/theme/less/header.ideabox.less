@@ -127,6 +127,7 @@ header {
 
         &.button {
             background-color: transparent;
+            font-size       : 2rem;
         }
 
         &:hover,
@@ -274,7 +275,7 @@ body:not(.main-homepage) {
 
         &>.container {
             flex-direction: column-reverse;
-            min-height: 10rem;
+            min-height    : 10rem;
 
             #portal-header {
                 margin  : 0;
@@ -300,7 +301,9 @@ body:not(.main-homepage) {
     }
 
     .userrole-anonymous #portal-user {
-        display: none;
+        .button::before {
+            display: none;
+        }
     }
 
     #portal-user {

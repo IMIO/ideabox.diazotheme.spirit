@@ -5,6 +5,9 @@ Changelog
 1.2.1 (unreleased)
 ------------------
 
+- Adapt login button with icon
+  [Aurore]
+
 - Adapt faceted, tile and header for responsive
   [Aurore]
 

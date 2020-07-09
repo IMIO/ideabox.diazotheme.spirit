@@ -85,17 +85,33 @@
     </replace>
   </rules>
   <!-- Content header -->
-  <replace css:theme="#portal-top" css:content-children="#portal-top" />
+  <replace css:theme-children="#portal-top" css:content-children="#portal-top" />
 
   <!-- Footer -->
   <replace css:theme-children="#portal-footer" css:content-children="#portal-footer" />
   <replace css:theme-children="#portal-footer-script" css:content="#portal-footer-wrapper script" />
 
   <!-- toolbar -->
+  <replace css:theme-children="#portal-header" css:content="#portal-header #portal-logo" />
+  <replace css:theme="#personaltools-infos" css:content="#personaltools-infos" />
+
   <replace css:theme="#portal-toolbar" css:content-children="#edit-bar" css:if-not-content=".ajax_load" css:if-content=".userrole-authenticated" />
-  <replace css:theme="#anonymous-actions" css:content-children="#portal-personaltools-wrapper" css:if-not-content=".ajax_load" css:if-content=".userrole-anonymous" />
-  <replace css:theme="#personaltools-infos" css:content="#personaltools-infos" css:if-not-content=".ajax_load" css:if-content=".userrole-authenticated" />
-  <replace css:theme="#portal-anontools" css:content="#portal-anontools" css:if-not-content=".ajax_load" css:if-content=".userrole-anonymous" />
+  <replace css:theme="#portal-user" css:content="#portal-user" css:if-not-content=".ajax_load" css:if-content=".userrole-authenticated" />
+
+  <replace css:theme="#portal-user ul" css:if-not-content=".ajax_load" css:if-content=".userrole-anonymous">
+    <a class="button">
+      <i class="fas fa-user"></i>
+    </a>
+    <ul id="user-menu-actions">
+      <li>
+        <xsl:copy-of css:select="#portal-anontools ul #personaltools-login" />
+      </li>
+      <li>
+        <xsl:copy-of css:select="#portal-anontools ul #personaltools-join" />
+      </li>
+    </ul>
+  </replace>
+
 
   <!-- Rules for spirit -->
   <merge if="$is_homepage" attributes="class" css:theme="body" css:content="body"/>
