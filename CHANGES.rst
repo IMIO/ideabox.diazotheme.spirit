@@ -5,7 +5,8 @@ Changelog
 1.2.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add "+" on action tile and grey background to slider tile
+  [Aurore]
 
 
 1.2.0 (2020-06-30)
