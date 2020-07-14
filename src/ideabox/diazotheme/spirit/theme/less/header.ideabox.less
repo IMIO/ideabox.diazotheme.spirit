@@ -127,7 +127,6 @@ header {
 
         &.button {
             background-color: transparent;
-            font-size       : 2rem;
         }
 
         &:hover,
@@ -264,6 +263,33 @@ body:not(.main-homepage) {
     }
 }
 
+@media (min-width: 768px) {
+    .userrole-anonymous {
+        #portal-user {
+            a.button {
+                display: none;
+            }
+
+            #user-menu-actions {
+                display      : flex !important;
+                position     : relative;
+                margin-bottom: 0;
+                padding      : 0;
+                align-items  : center;
+
+                li {
+                    margin-bottom: 0;
+                    font-weight  : 700;
+
+                    &:not(:first-child) {
+                        margin-left: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
 //MOBILE
 @media (max-width: 767px) {
 
@@ -326,6 +352,8 @@ body:not(.main-homepage) {
         }
 
         a.button {
+            font-size: 2rem;
+
             &::before {
                 padding-top: 0.3rem;
                 display    : block;

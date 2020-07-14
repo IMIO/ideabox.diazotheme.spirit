@@ -5,7 +5,8 @@ Changelog
 1.2.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Adapt login button for desktop
+  [Aurore]
 
 
 1.2.1 (2020-07-13)
