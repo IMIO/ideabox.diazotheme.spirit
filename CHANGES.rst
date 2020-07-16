@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.2.2 (unreleased)
+1.2.2 (2020-07-16)
 ------------------
 
 - Adapt login button for desktop
