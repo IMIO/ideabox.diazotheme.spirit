@@ -12,7 +12,7 @@
 
   <genericsetup:upgradeStep
     source="*"
-    destination="1002"
+    destination="1004"
     title="Reload registry resources"
     profile="ideabox.diazotheme.spirit:default"
     handler=".upgrades.reload_registry"
