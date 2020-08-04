@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.2.3 (unreleased)
+1.2.3 (2020-08-04)
 ------------------
 
 - Adapt style for publication date and image for news
