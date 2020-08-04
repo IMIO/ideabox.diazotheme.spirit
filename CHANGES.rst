@@ -5,7 +5,8 @@ Changelog
 1.2.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Adapt style for publication date and image for news
+  [mpeeters]
 
 
 1.2.2 (2020-07-16)
