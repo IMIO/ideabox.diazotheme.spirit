@@ -5,7 +5,8 @@ Changelog
 1.2.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add background color to mosaic
+  [Aurore]
 
 
 1.2.3 (2020-08-04)
