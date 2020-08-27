@@ -5,6 +5,9 @@ Changelog
 1.2.4 (unreleased)
 ------------------
 
+- Adapt style of newslettter style
+  [Aurore]
+
 - Add background color to mosaic
   [Aurore]
 
