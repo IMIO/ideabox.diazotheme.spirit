@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.2.4 (unreleased)
+1.2.4 (2020-08-28)
 ------------------
 
 - Adapt style of newslettter style
