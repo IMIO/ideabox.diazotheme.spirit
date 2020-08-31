@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rules xmlns="http://namespaces.plone.org/diazo" 
-  xmlns:css="http://namespaces.plone.org/diazo/css" 
-  xmlns:xhtml="http://www.w3.org/1999/xhtml" 
-  xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+<rules xmlns="http://namespaces.plone.org/diazo"
+  xmlns:css="http://namespaces.plone.org/diazo/css"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:xi="http://www.w3.org/2001/XInclude">
 
   <theme href="index.html" />
@@ -93,6 +93,10 @@
 
   <!-- toolbar -->
   <replace css:theme-children="#portal-header" css:content="#portal-header #portal-logo" />
+
+  <replace css:theme="#personaltools-Newsletter-block a" css:content="#personaltools-Newsletter" css:if-content="#personaltools-Newsletter" />
+  <drop css:theme="#personaltools-Newsletter-block" css:if-not-content="#personaltools-Newsletter" />
+  
   <replace css:theme="#personaltools-infos" css:content="#personaltools-infos" />
 
   <replace css:theme="#portal-toolbar" css:content-children="#edit-bar" css:if-not-content=".ajax_load" css:if-content=".userrole-authenticated" />

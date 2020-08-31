@@ -167,6 +167,31 @@ header {
     }
 }
 
+#personaltools-Newsletter-block {
+    order          : 2;
+    display        : inline-flex;
+    white-space    : nowrap;
+    align-items    : center;
+    justify-content: center;
+
+    a {
+        color           : @color-light;
+        background-color: #ca005d;
+        font-size       : 14px;
+        font-weight     : 700;
+        padding         : 0.5rem 1rem;
+        margin-right    : 1rem;
+    }
+}
+
+#personaltools-Newsletter-block+#personaltools-infos {
+    order: 3;
+}
+
+#personaltools-Newsletter-block+#personaltools-infos+#portal-user {
+    order: 4;
+}
+
 //BANNER
 [id="portal-banner"] {
     background: transparent;
