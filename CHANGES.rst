@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.2.5 (unreleased)
+1.2.5 (2020-08-31)
 ------------------
 
 - Adapt style of newslettter action button
