@@ -5,7 +5,8 @@ Changelog
 1.2.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Adapt style of newslettter action button
+  [Aurore]
 
 
 1.2.4 (2020-08-28)
