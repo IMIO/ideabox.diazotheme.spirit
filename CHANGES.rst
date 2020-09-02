@@ -5,7 +5,8 @@ Changelog
 1.2.6 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Adapt style of newslettter action button for responsive
+  [Aurore]
 
 
 1.2.5 (2020-08-31)
