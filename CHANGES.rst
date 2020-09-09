@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.2.7 (unreleased)
+1.2.7 (2020-09-09)
 ------------------
 
 - Add button to menu 
