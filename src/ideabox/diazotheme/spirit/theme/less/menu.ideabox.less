@@ -95,22 +95,6 @@
                         width           : 33%;
                         position        : relative;
 
-                        &:nth-child(2)>a::before {
-                            background-image: url("https://liege2025.staging.imio.be/images/icon1");
-                        }
-
-                        &:nth-child(3)>a::before {
-                            background-image: url("https://liege2025.staging.imio.be/images/icon2");
-                        }
-
-                        &:nth-child(4)>a::before {
-                            background-image: url("https://liege2025.staging.imio.be/images/icon3");
-                        }
-
-                        &:nth-child(5)>a::before {
-                            background-image: url("https://liege2025.staging.imio.be/images/icon4");
-                        }
-
                         &>a {
                             font-size  : 2rem;
                             line-height: 2.4rem;
@@ -122,6 +106,18 @@
                             &:active {
                                 background-color: @spirit-pink;
                             }
+                        }
+
+                        &:nth-child(2)>a::before {
+                            background-image: url("../images/icon1.png");
+                        }
+
+                        &:nth-child(3)>a::before {
+                            background-image: url("../images/icon2.png");
+                        }
+
+                        &:nth-child(5)>a::before {
+                            background-image: url("../images/icon4.png");
                         }
 
                         &:hover,
@@ -171,10 +167,46 @@
                             }
                         }
 
-                        &:hover,
-                        &:focus {
-                            .dropdown {
-                                display: inline-block;
+                        &:nth-child(4) {
+
+                            .dropdown li a {
+
+                                &:hover,
+                                &:focus,
+                                a:active {
+                                    color           : #f48f00 !important;
+                                    background-color: transparent;
+                                }
+                            }
+
+                            &:hover,
+                            &:active,
+                            &:focus {
+                                &>a {
+                                    background-color: #f48f00;
+                                }
+                            }
+
+                            &>a {
+
+                                &:hover,
+                                &:focus,
+                                &:active {
+                                    background-color: #f48f00;
+                                }
+
+                                &::before {
+                                    background-image: url("../images/icon3.png");
+                                    background-color: #f48f00;
+                                    border          : 15px solid #f48f00;
+                                }
+                            }
+
+                            &:hover,
+                            &:focus {
+                                .dropdown {
+                                    display: inline-block;
+                                }
                             }
                         }
                     }
@@ -390,6 +422,23 @@
                                     }
                                 }
                             }
+                        }
+                    }
+
+                    &:nth-child(4) {
+
+                        .has_subtree li a,
+                        a {
+
+                            &:hover,
+                            &:active,
+                            &:focus {
+                                background-color: #f48f00 !important;
+                            }
+                        }
+
+                        label::before {
+                            color: #f48f00 !important;
                         }
                     }
                 }
