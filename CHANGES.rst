@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.2.6 (unreleased)
+1.2.6 (2020-09-09)
 ------------------
 
 - Adapt style of newslettter action button for responsive
