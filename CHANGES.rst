@@ -5,14 +5,12 @@ Changelog
 1.2.7 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add button to menu 
+  [Aurore]
 
 
 1.2.6 (2020-09-09)
 ------------------
-
-- Add button to menu 
-  [Aurore]
 
 - Adapt style of newslettter action button for responsive
   [Aurore]
