@@ -90,22 +90,32 @@
                         font-family     : @ideabox-font-primary;
                         font-size       : 2rem;
                         line-height     : 2.4rem;
-                        padding         : 3rem;
+                        padding         : 3rem 1rem;
                         text-transform  : uppercase;
                         width           : 33%;
                         position        : relative;
 
                         &>a {
-                            font-size  : 2rem;
+                            font-size  : 1.6rem;
                             line-height: 2.4rem;
                             height     : 100%;
                             width      : 100%;
+                            padding    : 10px;
 
                             &:hover,
                             &:focus,
                             &:active {
                                 background-color: @spirit-pink;
                             }
+                        }
+
+
+                        &:nth-child(2) {
+                            padding-left: 30px;
+                        }
+
+                        &:last-child {
+                            padding-right: 30px;
                         }
 
                         &:nth-child(2)>a::before {
@@ -225,7 +235,7 @@
     display: none;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
 
     [id="mainnavigation-wrapper"] {
         margin-top: 2rem;

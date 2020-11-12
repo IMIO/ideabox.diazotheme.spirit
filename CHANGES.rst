@@ -5,7 +5,8 @@ Changelog
 1.2.8 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Adapt menu 
+  [Aurore]
 
 
 1.2.7 (2020-09-09)
